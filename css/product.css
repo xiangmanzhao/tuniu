@@ -1,0 +1,74 @@
+.content_bg{background:#F0F2F5;overflow:hidden;font-family:"微软雅黑";height:575px;}
+#content{width:1200px;margin:0 auto 10px;overflow:hidden;}
+.content_title{height:30px;line-height:30px;}
+.content_title a:hover{color:#4E9700;}
+
+/*内容*/
+.content_main_left,.content_main_right{height:800px;}
+.pro_trl,.pro_team,.content_main_left{background:#fff;border:1px solid #eee;}
+.content_main_left{float:left;width:960px;height:483px;padding:20px;}
+.content_main_right{float:right;width:190px;}
+
+.content_main_left h2{font-size:20px;text-align:left;line-height:32px;font-weight:normal;margin-bottom:5px;}
+.content_main_left .titlenum{float:left;color:#f80;}
+.content_main_left .titleinfo{float:left;color:#666;margin-left:5px;}
+.content_main_left .titlelink{float:right;color:#eee;margin-bottom:10px;}
+.content_main_left .titlelink a{color:#4e9700;}
+.content_main_left .titlelink a:hover{color:#f80;text-decoration:underline;}
+
+/*主要信息*/
+.pro_tour_main{clear:both;}
+.pro_tour_left{width:500px;height:350px;border:1px solid #eee;clear:both;float:left;}
+.pro_img_box{width:500px;height:280px;overflow:hidden;}
+.pro_img_list{margin-left:37px;}
+.pro_img_nav{position:relative;width:498px;height:50px;border-left:1px solid #eee;padding-right:1px solid #eee;overflow:hidden;padding:10px 0;}
+.pro_img_nav .pro_img_list{overflow:hidden;width:534px;float:left;}
+.pro_list{width:460px;overflow:hidden;}
+.pro_img_nav li img{width:99px;height:50px;margin-right:7px;opacity:0.5;}
+.pro_img_nav .pro_back{background:url(../images/product/gallery_icon.png)no-repeat 5px -107px;width:24px;height:50px;position:absolute;left:6px;top:10px;cursor:pointer;}
+.pro_img_nav .pro_forward{background:url(../images/product/gallery_icon.png)no-repeat 5px -46px;width:24px;height:50px;position:absolute;right:6px;top:10px;cursor:pointer;}
+
+.pro_img_list .img_list_active{border:2px solid #f80;opacity:1;}
+
+.pro_tour_right{float:right;width:458px;height:107px;background:url(../images/product/niuzhuan_price_bg3.png)no-repeat top center;}
+.pro_tour_sale{height:107px;line-height:107px}
+.pro_tour_sale .pro_sale_title{display:inline-block;width:60px;height:50px;line-height:50px;color:#666;text-align:right;margin-left:30px;font-size:14px;}
+.pro_tour_sale .pro_sale_price{display:inline-block;color:#f60;font-size:30px;margin-right:5px;margin-left:5px;}
+.pro_tour_sale .pro_sale_icon{font-size:18px;}
+
+/*用户评价*/
+.pro_tour_evalu{margin:30px 10px;height:50px;border-top:1px solid #eee;border-bottom:1px solid #eee;}
+.pro_tour_evalu li{float:left;width:144px;height:50px;text-align:center;line-height:2;border-right:1px solid #eee;}
+
+.pro_tour_evalu .pro_clear_border{border-right:none;}
+.pro_tour_evalu p{font-size:18px;color:#f80;line-height:28px;}
+.pro_tour_evalu i{display:inline-block;color:#999;font-style:normal;font-family:"微软雅黑";}
+
+/*购买部分*/
+.pro_buy{height:133px;background:#F4F5F6;margin:30px 10px;}
+.pro_shop_num{margin-left:20px;height:70px;line-height:70px;}
+.pro_shop_num p{text-align:center;float:left;width:80px;font-family:"微软雅黑";color:#999;font-size:14px;}
+.pro_shop_num .pro_change_count{float:left;margin-top:22px;}
+.pro_change_count span{cursor:pointer;float:left;position:relative;display:inline-block;width:22px;height:22px;border:1px solid #ccc;background:#fff;}
+.pro_sub .pro_icon{top:10px;left:4px;position:absolute;width:10px;height:10px;display:inline-block;background:url(../images/product/tour_icon.png)no-repeat -53px -56px;}
+.pro_plus .pro_icon{top:7px;left:7px;position:absolute;width:10px;height:10px;display:inline-block;background:url(../images/product/tour_icon.png)no-repeat -40px -56px;}
+.pro_change_count input{text-align:center;line-height:22px;float:left;width:33px;height:22px;border-bottom:1px solid #ccc;border-top:1px solid #ccc;}
+
+/*购买按钮*/
+.pro_btn_buy{width:130px;height:40px;line-height:40px;color:#fff;cursor:pointer;font-size:18px;border-radius:1px;background:#f80;text-align:center;margin:0 auto;}
+
+
+/* 右侧 */
+.content_main_right{float:right;}
+.pro_trl,.pro_team{padding:3px 5px;}
+.content_main_right h3{font-weight:normal;}
+.pro_trl{margin-bottom:10px;}
+.pro_trl li{padding:5px 2px;border-bottom:1px dotted #eee;line-height:2;}
+.pro_trl li a:hover{text-decoration:underline;}
+.pro_trl .pro_icon{width:16px;height:16px;line-height:16px;text-align:center;background:#f80;display:inline-block;color:#fff;}
+.pro_trl .pro_grey{background:#dedede;}
+
+.pro_team{height:125px;background:url(../images/product/team_tour_bg.jpg)no-repeat;}
+.pro_team .pro_team_title{margin-top:10px;}
+.pro_team .pro_team_title span{color:#f80;}
+.pro_team .pro_team_btn{margin-top:12px;display:inline-block;width:67px;height:24px;background:#f80;text-align:center;border-radius:2px;line-height:24px;font-size:12px;color:#fff;cursor:pointer;}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="shortcut icon" href="../images/common/favicon.ico">
+	<script src='../js/lib/jquery-1.12.3.js'></script>
+	<script src="../js/login.js"></script>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src='../js/lib/jquery.cookie.js'></script>
+</head>
+<body>
+	<!-- logo -->
+	<div class="login_header">
+		<div class="header_logo"><a href="../tuniu.html"><img src="../images/common/logo0127.png" alt="途牛"></a></div>
+	</div>
+	<!-- 登录正文 -->
+	<div class="login_wrap">
+		<div class="login_content_bg">
+			<div class="login_content">
+			<!-- 切换登录方式 -->
+				<ul class="login_list">
+					<li class="login_list_active">途牛会员登录<b style="display:block"></b></li>
+					<li>动态密码登录<b></b></li>
+				</ul>
+				<!-- 二维码登录 -->
+				<ul class="login_code" style="display:none">
+					<li>扫码登录</li><b style="display:block"></b>
+				</ul>
+				<a class="close_login_code" href="#" style="display:none">返回普通登录</a>
+				<!-- 二维码登录内容 -->
+				<div class="login_code_box" style="display:none">
+					<img src="../images/login/qrcode.png">
+					<p>请用途牛旅游网app扫码登录哦</p>
+					<a href="#"><i class="codebtn"></i>刷新二维码</a>
+				</div>
+				<!-- 注册表单 -->
+				<div class="login_form_box">
+					<div class="login_form">
+						<form class="login_name login_common">
+							<span class="login_icon_user"></span>
+							<input type="username" placeholder="手机号/会员号/昵称/邮箱">
+							<a href="#">国际手机号登录</a>
+						</form>
+						<form class="login_pass login_common">
+							<span class="login_icon_pass"></span>
+							<input type="password">
+						</form>
+						<form class="login_num" style="display:none">
+							<input class="login_area" type="username" placeholder="中国 0086">
+							<input class="login_phonenum" type="username" placeholder="手机号码">
+						</form>
+						<form class="login_getnum " style="display:none">
+							<span class="login_icon_pass"></span>
+							<input type="text">
+							<span class="login_getpas">获取动态密码</span>
+						</form>
+						<p class="login_twoweek"><input type="checkbox">两周内自动登录</p>
+						<p class="login_forget"><a href="#">忘记密码？</a></p>
+						<button class="login_btn">登录</button>
+						<p class="login_now"><a href="#">立即注册，即可获得50元抵用券</a></p>
+						<p class="login_now_work"><a href="#">使用合作卡登录</a></p>
+					</div>
+				</div>
+				<div class="login_partner">
+					<p>用以下方式登录</p>
+					<ul>
+						<li class="qq">
+		                    <a href="#"></a>
+		                    <span style="display:none">腾讯</span>
+		                </li>
+		                <li class="sina">
+		                    <a href="#"></a>
+		                    <span style="display:none">新浪</span>
+		                </li>
+					</ul>
+				</div>
+				<div class="login_changebtn changeposition"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="login-footer">
+	    <p class="login-24">24小时客户服务电话(免长途费)：4007-999-999  途牛呼叫中心位于南京来电将统一显示为 025-86859999</p>
+	    <p class="login-links">
+	        <a href="#">关于我们</a>
+	        <a href="#">Investor Relations</a>
+	        <a href="#">联系我们</a>
+	        <a href="#">投诉建议</a>
+	        <a href="#">广告服务</a>
+	        <a href="#">旅游券</a>
+	        <a href="#" style="color:red;">途牛招聘</a>
+	        <a href="#">隐私保护</a>
+	        <a href="#">免责声明</a>
+	        <a href="#">旅游度假资质</a>
+	        <a href="#">供应商合作</a>
+	        <a href="#">用户协议</a>
+	        <a href="#">网站地图</a>
+	        <br>
+	        <a href="#">团队博客</a>
+	        <a href="#">网站联盟</a>
+	        <a href="#">UEIP</a>
+	        <a href="#">帮助中心</a>
+	    </p>
+	    <p class="copyright">Copyright © 2006-2014
+	        <a href="#">途牛旅游网</a>
+	        <a href="#">Tuniu.com</a> |
+	        <a href="#">营业执照</a> |
+	        <a href="#">ICP证：苏B2-20130006</a>&nbsp;&nbsp;
+	        <a href="#">上海旅游网</a>
+	    </p>
+	</div>
+</body>
+</html>
