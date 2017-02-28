@@ -1,0 +1,53 @@
+/*公用*/
+.login_header,.login_content_bg{width:1000px;margin:0 auto};
+/*头部logo*/
+.login_header{height:100px;}
+.header_logo{height:100px;}
+.login_wrap{height:560px;background:url(../images/login/1yuan_1.jpg) no-repeat top center;}
+.login-footer{width:1000px;margin:10px auto;line-height:2;text-align:center;}
+
+
+/*登陆内容*/
+.login_content_bg{position:relative;}
+.login_content{position:absolute;width:420px;top:30px;right:40px;height:490px;box-shadow:0 1px 4px #d6d6d6;background:#fff;}
+.login_content .login_list .login_list_active{background:#43b413;color:#fff;}
+.login_content .login_list li{cursor:pointer;position:relative;width:50%;float:left;height:45px;text-align:center;line-height:45px;background:#e6f7df;color:#89c86f;font-size:18px;}
+.login_content .login_code li{background:#43b413;color:#fff;cursor:pointer;position:relative;width:100%;float:left;height:45px;text-align:center;line-height:45px;font-size:18px;}
+.login_content b{position:absolute;background:url(../images/login/login_icon.png)no-repeat 0 0;width:12px;height:4px;left:48%;top:45px;display:none;}
+
+/*登录框*/
+.login_content .login_form_box{border-bottom:1px solid #ededed}
+.login_content .login_form{overflow:hidden;width:280px;clear:both;padding-left:65px;font-size:12px;padding-bottom:20px;padding-top:30px;}
+.login_content .login_form form{margin-bottom:20px;width:272px;height:32px;border:1px solid #e0e0e0;line-height:32px;padding-left:3px;}
+.login_content .login_form .login_name .login_icon_user{float:left;display:inline-block;width:35px;height:35px;background:url(../images/login/login_icon.png)no-repeat 12px -12px;}
+.login_content .login_form .login_icon_pass{float:left;display:inline-block;width:35px;height:35px;background:url(../images/login/login_icon.png)no-repeat 12px -52px;}
+.login_content .login_form .login_name a{float:right;color:#2e9900;margin-right:3px;}
+.login_content .login_form .login_name input{float:left;line-height:32px;font-size:12px;color:#999;width:150px;}
+.login_content .login_twoweek{float:left;padding-right:5px;line-height:1.5;}
+.login_content .login_twoweek input{margin-right:10px;float:left;margin-top:2px;}
+.login_content .login_forget a{float:right;}
+.login_content .login_forget a:hover{color:#39C34C;}
+.login_content .login_form .login_btn{cursor:pointer;width:100%;height:40px;line-height:40px;border-radius:3px;font:18px "微软雅黑";text-align:center;background:#f80;color:#fff;margin-top:20px}
+.login_content .login_form .login_now a{color:#f80;margin:10px 0 5px;display:inline-block;line-height:18px;font-size:14px;}
+.login_content .login_form .login_now_work a{color:#39c34c;text-decoration:underline;margin:5px 0 5px;display:inline-block;line-height:18px;font-size:14px;}
+
+.login_content .login_form .login_num {border:none;}
+.login_num .login_area{height:32px;line-height:32px;width:110px;margin-right:3px;padding-left:2px;border:1px solid #e0e0e0;}
+.login_num .login_phonenum{height:32px;line-height:32px;width:148px;border:1px solid #e0e0e0;padding-left:2px;}
+.login_getnum .login_getpas{display:inline-block;height:32px;background:#f9f9f9;width:90px;text-align:center;border-left:1px solid #e0e0e0;cursor:pointer;}
+
+.login_code_box img{margin:50px 130px;width:164px;height:164px;padding:7px;background:#fff;border:1px solid #eee;}
+.login_code_box{width:420px;clear:both;overflow:hidden;margin:0 auto;text-align:center;}
+.login_code_box p{height:24px;line-height:2;clear:both;}
+.login_code_box a{color:#39c34c;font-size:16px;display:inline-block;margin-top:10px;}
+.login_code_box i{float:left;margin-right:5px;margin-top:2px;line-height:20px;display:inline-block;background:url(../images/login/login_theme.png)no-repeat 0 -139px;width:16px;height:20px;}
+/*其他方式登录*/
+.login_partner{line-height:24px;width:280px;margin:0 auto;}
+.login_partner p{line-height:24px;margin-top:10px;}
+.login_partner li{width:36px;text-align:center;margin-top:20px;float:left;margin-right:30px;}
+.login_partner li a{display:inline-block;background:url(../images/login/login_theme.png)no-repeat;width:32px;height:32px;}
+.login_partner .qq a{background-position:-160px 0;}
+.login_changebtn{width:51px;height:53px;position:absolute;right:0;bottom:0;cursor:pointer;background:url(../images/login/login_theme.png)no-repeat;}
+.changeposition{background-position: 0 -83px;}
+.close_login_code{position:absolute;right:5px;top:13px;color:#fff;}
+.close_login_code:hover{color:#fff;}

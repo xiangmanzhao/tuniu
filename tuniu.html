@@ -1,0 +1,2846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>途牛</title>
+	<link rel="shortcut icon" href="images/common/favicon.ico">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src='js/lib/jquery-1.12.3.js'></script>
+	<script src='js/common.js'></script>
+	<script src='js/index.js'></script>
+	<script src='js/lib/jquery.cookie.js'></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 页面定位 -->
+		<div id="fixed">
+
+			<!-- 左侧菜单 开始-->
+
+			<div class="left_menu" style="display:none">
+				<ul>
+					<li>超值特卖</li>
+					<li>金秋特惠</li>
+					<li>出境长线</li>
+					<li>出境短线</li>
+					<li>国内旅游</li>
+					<li>周边旅游</li>
+				</ul>
+			</div>
+
+			<!-- 左侧菜单 结束-->
+
+			<!-- 右侧菜单 开始-->
+
+			<div class="right_list">
+				<ul style="visibility:hidden">
+					<li class="right_list_clearpadd">
+						<img src="images/index/Cii-T1fGqmSIVfVuAAAVr5x16U0AAB6NAMP5qIAABXH98.jpeg">
+					</li>
+					<li>
+						<span class="rc_icon rc_app"></span>
+					</li>
+					<li class="hover_tuniu" style="visibility:visible">
+						<span class="rc_icon rc_tuniu"></span>
+						<p class="fixed_rc_tuniu">我的途牛</p>
+					</li>
+					<li>
+						<span class="rc_icon rc_collect"></span>
+					</li>
+					<li>
+						<span class="rc_icon rc_order"></span>       
+					</li>
+					<li>
+						<span class="rc_icon rc_quan"></span>
+					</li>
+					<li>
+						<span class="rc_icon rc_kefutips"></span>
+					</li>
+					<li>
+						<span class="rc_icon rc_qa"></span>
+					</li>
+					<li>
+						<span class="rc_icon rc_advise"></span>
+					</li>
+					<li class="hover_top" style="visibility:visible">
+						<span class="rc_icon rc_backtotop" id=""></span>
+						<p class="rc_des">返回顶部</p>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 右侧菜单 结束-->
+
+			<!-- 底部app 开始-->
+
+			<div class="m_app"></div>
+
+			<!-- 底部app 结束-->
+		</div>
+		<!-- header 开始-->
+		<div id="header">
+			<!-- 头部列表栏 开始-->
+
+			<div class="header_top_bg">
+				<div class="header_top">
+					<div class="login_menu">
+						<ul class="login_menu_list">
+							<li><a href="html/login.html">登录</a>|</li>
+							<li><a href="html/reg.html">注册</a></li>
+							<li><a href="#"><img src="images/common/registgift.gif" alt="注册有礼"></a></li>
+						</ul>
+					</div>
+					<div class="header_top_nav">
+						<ul class="header_top_nav_list">
+							<li class='header_top_job'><a href="#">途牛招聘</a></li>
+							<li class='header_top_color'><a href="#">企业频道</a></li>
+							<li class='header_top_color'><a href="#">会员俱乐部</a></li>
+							<li class='header_top_order'>
+								我的订单
+								<span class='header_icon icon_arrow'></span>
+								
+								<!-- 订单列表 开始-->
+								<div class="top_order_list" style='display:none'>
+									<a href="html/shop.html">全部订单</a>
+									<a href="#">我的机票</a>
+									<a href="#">我的火车票</a>
+									<a href="#">我的夺宝</a>
+								</div>
+								<!-- 订单列表 结束 -->
+							</li>
+							<li class='header_top_webmap'>
+									网站地图
+									<span class='header_icon icon_arrow'></span>
+								
+								<!-- 网站地图列表 开始-->
+								<dl class="top_map_list" style='display:none'>
+									<dt class='map_list_gotour'>去旅游</dt>
+									<dd>
+										<ul>
+											<li><a href="#">跟团游</a></li>
+											<li><a href="#">自助游</a></li>
+											<li><a href="#">自驾游</a></li>
+											<li><a href="#">公司旅游</a></li>
+											<li><a href="#">当地玩乐</a></li>
+											<li><a href="#">首付出发</a><span class='header_icon icon_new'></span></li>
+										</ul>
+										<ul>
+											<li><a href="#">牛人专线</a></li>
+											<li><a href="#">亲子游</a></li>
+											<li><a href="#">蜜月游</a></li>
+											<li><a href="#">海岛游</a></li>
+											<li><a href="#">老于推荐</a></li>
+											<li><a href="#">机票+酒店</a><span class='header_icon icon_hot'></span></li>
+										</ul>
+										<ul>
+											<li><a href="#">酒店</a></li>
+											<li><a href="#">门票</a></li>
+											<li><a href="#">游轮</a></li>
+											<li><a href="#">签证</a></li>
+											<li><a href="#">机票</a></li>
+										</ul>						
+									</dd>
+									<dt class='map_list_gocount'>寻优惠</dt>
+									<dd>
+										<ul>
+											<li><a href="#">特卖</a></li>
+											<li><a href="#">订酒店 返现金</a></li>
+											<li><a href="#">一元夺宝</a></li>
+											<li><a href="#">银行特会游</a></li>
+											<li><a href="#">银行分期游</a></li>
+										</ul>						
+									</dd>
+									<dt class='map_list_goguide'>看攻略</dt>
+									<dd>
+										<ul>
+											<li><a href="#">攻略</a></li>
+											<li><a href="#">途牛风向标</a></li>
+											<li><a href="#">游记</a></li>
+											<li><a href="#">达人玩法</a></li>
+										</ul>						
+									</dd>
+									<dt class='map_list_goserve'>查服务</dt>
+									<dd>
+										<ul>
+											<li><a href="#">帮助中心</a></li>
+											<li><a href="#">积分俱乐部</a></li>
+											<li><a href="#">阳光保障</a></li>
+											<li><a href="#">火车时刻表</a></li>
+											<li><a href="#">地铁路线图</a></li>
+										</ul>						
+									</dd>
+								</dl>
+								<!-- 网站地图列表 结束-->
+							</li>
+							<li class='header_top_weibo'><a href="#
+							"><span class='header_icon icon_arrow'></span></a>
+								
+							</li>
+							<li class='header_top_phone'>
+								<span class='header_icon icon_arrow'></span>
+								<div class="top_phone_app" style='display:none'>
+									<img src="images/common/head_qrcode_20160405.png" alt="code">
+								</div>
+							</li>
+							<li class='header_top_weixin'>
+								<a href="#"><span class='header_icon icon_arrow'></span>
+							</a>
+								
+								<div class="top_weixin_code" style='display:none'>
+									<img src="images/common/erweima.gif" alt="code">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- 头部列表栏 结束-->
+
+			<!-- 头部搜索栏 开始-->
+
+			<div class="header_search">
+				<div class="header_logo">
+					<p class='header_logo_pic'><a href="tuniu.html"><img src="images/common/logo0127.png" alt="途牛"></a></p>
+					<div class="header_localcity">
+						<div class="header_nowcity">
+							<p>
+								<span class='header_cityname'>深圳站</span>
+								<span class='header_icon icon_arrow'></span>
+								<img src="images/common/local_branch.png" alt="门市地址" title='门市地址' width='61px' height='16px;'>
+							</p>
+						</div>
+						 <!-- 鼠标移入城市出现的列表 -->
+						<div class="header_allcity" style='display:none'>
+							<p class="header_allcity_hottitle">热门城市</p>
+							<ul class='header_allcity_hotcity'>
+								 <li><a href="#">北京 </a></li>
+								 <li><a href="#">南京 </a></li>
+								 <li><a href="#">上海 </a></li>
+								 <li><a href="#">杭州 </a></li>
+								 <li><a href="#">苏州 </a></li>
+								 <li><a href="#">天津 </a></li>
+								 <li><a href="#">深圳</a></li>
+								 <li><a href="#">无锡</a></li>
+								 <li><a href="#">成都</a></li>
+								 <li><a href="#">重庆</a></li>
+								 <li><a href="#">武汉</a></li>
+								 <li><a href="#">沈阳</a></li>
+								 <li><a href="#">广州</a></li>
+								 <li><a href="#">宁波</a></li>
+								 <li><a href="#">西安</a></li>
+								 <li><a href="#">郑州 </a></li>
+							</ul>
+							<form class='header_search_citybox'>
+								<span class='header_icon icon_arrow'></span>
+								<input type="text" placeholder='搜索城市（支持汉字，拼音，首字母查询）'>
+							</form>
+							<ul class='header_allcity_first'>
+								<li class='header_allcity_active'>ABCDE</li>
+								<li>FGHJ</li>
+								<li>KLMNP</li>
+								<li>QRSTW</li>
+								<li>XYZ</li>
+							</ul>
+							<div class="header_common_word" style='display:block'>
+								<p>A</p>	
+								<ul class="header_first_A">	
+									<li class='header_first_color'><a href="#">鞍山</a></li>
+									<li class='header_first_color'><a href="#">安庆</a></li>
+									<li><a href="#">安阳</a></li>
+									<li><a href="#">安溪县</a></li>
+									<li><a href="#">安吉县</a></li>
+									<li><a href="#">安达市</a></li>
+									<li><a href="#">安宁市</a></li>
+									<li><a href="#">阿图什市</a></li>
+									<li><a href="#">阿拉尔</a></li>
+									<li><a href="#">安陆市</a></li>
+									<li><a href="#">安康</a></li>
+									<li><a href="#">安国市</a></li>
+									<li><a href="#">阿勒泰</a></li>
+									<li><a href="#">阿克苏</a></li>
+									<li><a href="#">阿拉善右旗</a></li>
+									<li><a href="#">阿拉善左旗</a></li>
+									<li><a href="#">阿尔山市</a></li>
+									<li><a href="#">安顺</a></li>
+									<li><a href="#">阿坝</a></li>
+									<li><a href="#">阿里</a></li>
+								</ul>
+								<p>B</p>
+								<ul class="header_first_B">
+									<li class='header_first_color'><a href="#">北京</a></li>	
+									<li class='header_first_color'><a href="#">包头</a></li>	
+									<li class='header_first_color'><a href="#">蚌埠</a></li>	
+									<li class='header_first_color'><a href="#">保定</a></li>	
+									<li class='header_first_color'><a href="#">本溪</a></li>	
+									<li class='header_first_color'><a href="#">宝鸡</a></li>	
+									<li><a href="#">亳州</a></li>	
+									<li><a href="#">滨州</a></li>	
+									<li><a href="#">彬县</a></li>	
+									<li><a href="#">北海</a></li>	
+									<li><a href="#">北安市</a></li>
+									<li><a href="#">北票市</a></li>
+									<li><a href="#">北镇市</a></li>
+									<li><a href="#">北流市</a></li>
+									<li><a href="#">霸州市</a></li>
+									<li><a href="#">泊头市</a></li>
+									<li><a href="#">博乐市</a></li>
+									<li><a href="#">保山</a></li>	
+									<li><a href="#">巴彦淖尔</a></li>
+									<li><a href="#">白山</a></li>	
+									<li><a href="#">毕节</a></li>
+									<li><a href="#">百色</a></li>
+								</ul>
+								<p>C</p>	
+								<ul class="header_first_C">
+									<li class='header_first_color'><a href="#">成都</a></li>
+									<li class='header_first_color'><a href="#">重庆</a></li>
+									<li class='header_first_color'><a href="#">长沙</a></li>
+									<li class='header_first_color'><a href="#">长春</a></li>
+									<li class='header_first_color'><a href="#">常州</a></li>
+									<li class='header_first_color'><a href="#">常德</a></li>
+									<li><a href="#">滁州</a></li>
+									<li><a href="#">赤峰</a></li>
+									<li class='header_first_color'><a href="#">长治</a></li>
+									<li class='header_first_color'><a href="#">沧州</a></li>
+									<li><a href="#">巢湖市</a></li>
+									<li><a href="#">池州</a></li>
+									<li class='header_first_color'><a href="#">承德</a></li>
+									<li class='header_first_color'><a href="#">郴州</a></li>
+									<li><a href="#">长汀县</a></li>
+									<li><a href="#">潮州</a></li>
+									<li><a href="#">楚雄市</a></li>
+									<li><a href="#">赤水市</a></li>
+									<li><a href="#">昌吉</a></li>
+									<li><a href="#">崇州市</a></li>
+									<li><a href="#">长葛市</a></li>
+									<li><a href="#">常宁市</a></li>
+									<li><a href="#">嵊州市</a></li>
+									<li><a href="#">朝阳</a></li>
+									<li><a href="#">赤壁市</a></li>
+									<li><a href="#">岑溪市</a></li>
+									<li><a href="#">长乐市</a></li>
+									<li><a href="#">长兴县</a></li>
+									<li><a href="#">慈溪市</a></li>
+									<li class='header_first_color'><a href="#">常熟</a></li>
+									<li><a href="#">昌都</a></li>
+									<li><a href="#">长海县</a></li>
+								</ul>
+								<p>D</p>	
+								<ul class="header_first_D">								
+									<li class='header_first_color'><a href="">大连</a></li>
+									<li class='header_first_color'><a href="">大庆</a></li>
+									<li class='header_first_color'><a href="">大同</a></li>
+									<li class='header_first_color'><a href="">东莞</a></li>
+									<li class='header_first_color'><a href="">丹东</a></li>
+									<li class='header_first_color'><a href="">东营</a></li>
+									<li><a href="">德州</a></li>
+									<li><a href="">达州</a></li>
+									<li class='header_first_color'><a href="">德阳</a></li>
+									<li><a href="">大理</a></li>
+									<li><a href="">定西</a></li>
+									<li><a href="">敦化市</a></li>
+									<li><a href="">大安市</a></li>
+									<li><a href="">德惠市</a></li>
+									<li><a href="">调兵山市</a></li>
+									<li><a href="">灯塔市</a></li>
+									<li><a href="">大石桥市</a></li>
+									<li><a href="">东港市</a></li>
+									<li><a href="">都匀市</a></li>
+									<li><a href="">都江堰市</a></li>
+									<li><a href="">邓州市</a></li>
+									<li><a href="">东阳市</a></li>
+									<li><a href="">当阳市</a></li>
+									<li><a href="">丹江口市</a></li>
+									<li><a href="">大冶市</a></li>
+									<li><a href="">东方市</a></li>
+									<li><a href="">东兴市</a></li>
+									<li><a href="">德兴市</a></li>
+									<li><a href="">德清县</a></li>
+									<li><a href="">丹阳市</a></li>
+									<li><a href="">大丰市</a></li>
+									<li><a href="">东台市</a></li>
+									<li><a href="">定州市</a></li>
+									<li><a href="">敦煌市</a></li>
+									<li><a href="">大兴安岭</a></li>
+									<li><a href="">德宏</a>		</li>
+									<li><a href="">稻城县</a></li>
+								</ul>
+								<p>E</p>
+								<ul class="header_first_E">
+									<li><a href="#">鄂尔多斯</a></li>
+									<li><a href="#">恩施</a></li>
+									<li><a href="#">鄂州</a></li>
+									<li><a href="#">峨眉山市</a></li>
+									<li><a href="#">恩平市</a></li>
+									<li><a href="#">额尔古纳市</a></li>
+									<li><a href="#">额济纳旗</a></li>
+									<li><a href="#">二连浩特市</a></li>
+								</ul>
+							</div>
+							<div class="header_common_word">
+								<p>F</p>	
+								<ul class="header_first_F">	
+									<li class='header_first_color'><a href="#">鞍山</a></li>
+									<li class='header_first_color'><a href="#">安庆</a></li>
+									<li><a href="#">安阳</a></li>
+									<li><a href="#">安溪县</a></li>
+									<li><a href="#">安吉县</a></li>
+									<li><a href="#">安达市</a></li>
+									<li><a href="#">安宁市</a></li>
+									<li><a href="#">阿图什市</a></li>
+									<li><a href="#">阿拉尔</a></li>
+									<li><a href="#">安陆市</a></li>
+									<li><a href="#">安康</a></li>
+									<li><a href="#">安国市</a></li>
+									<li><a href="#">阿勒泰</a></li>
+									<li><a href="#">阿克苏</a></li>
+									<li><a href="#">阿拉善右旗</a></li>
+									<li><a href="#">阿拉善左旗</a></li>
+									<li><a href="#">阿尔山市</a></li>
+									<li><a href="#">安顺</a></li>
+									<li><a href="#">阿坝</a></li>
+									<li><a href="#">阿里</a></li>
+								</ul>
+								<p>G</p>
+								<ul class="header_first_G">
+									<li class='header_first_color'><a href="#">北京</a></li>	
+									<li class='header_first_color'><a href="#">包头</a></li>	
+									<li class='header_first_color'><a href="#">蚌埠</a></li>	
+									<li class='header_first_color'><a href="#">保定</a></li>	
+									<li class='header_first_color'><a href="#">本溪</a></li>	
+									<li class='header_first_color'><a href="#">宝鸡</a></li>	
+									<li><a href="#">亳州</a></li>	
+									<li><a href="#">滨州</a></li>	
+									<li><a href="#">彬县</a></li>	
+									<li><a href="#">北海</a></li>	
+									<li><a href="#">北安市</a></li>
+									<li><a href="#">北票市</a></li>
+									<li><a href="#">北镇市</a></li>
+									<li><a href="#">北流市</a></li>
+									<li><a href="#">霸州市</a></li>
+									<li><a href="#">泊头市</a></li>
+									<li><a href="#">博乐市</a></li>
+									<li><a href="#">保山</a></li>	
+									<li><a href="#">巴彦淖尔</a></li>
+									<li><a href="#">白山</a></li>	
+									<li><a href="#">毕节</a></li>
+									<li><a href="#">百色</a></li>
+								</ul>
+								<p>H</p>	
+								<ul class="header_first_H">
+									<li class='header_first_color'><a href="#">成都</a></li>
+									<li class='header_first_color'><a href="#">重庆</a></li>
+									<li class='header_first_color'><a href="#">长沙</a></li>
+									<li class='header_first_color'><a href="#">长春</a></li>
+									<li class='header_first_color'><a href="#">常州</a></li>
+									<li class='header_first_color'><a href="#">常德</a></li>
+									<li><a href="#">滁州</a></li>
+									<li><a href="#">赤峰</a></li>
+									<li class='header_first_color'><a href="#">长治</a></li>
+									<li class='header_first_color'><a href="#">沧州</a></li>
+									<li><a href="#">巢湖市</a></li>
+									<li><a href="#">池州</a></li>
+									<li class='header_first_color'><a href="#">承德</a></li>
+									<li class='header_first_color'><a href="#">郴州</a></li>
+									<li><a href="#">长汀县</a></li>
+									<li><a href="#">潮州</a></li>
+									<li><a href="#">楚雄市</a></li>
+									<li><a href="#">赤水市</a></li>
+									<li><a href="#">昌吉</a></li>
+									<li><a href="#">崇州市</a></li>
+									<li><a href="#">长葛市</a></li>
+									<li><a href="#">常宁市</a></li>
+									<li><a href="#">嵊州市</a></li>
+									<li><a href="#">朝阳</a></li>
+									<li><a href="#">赤壁市</a></li>
+									<li><a href="#">岑溪市</a></li>
+									<li><a href="#">长乐市</a></li>
+									<li><a href="#">长兴县</a></li>
+									<li><a href="#">慈溪市</a></li>
+									<li class='header_first_color'><a href="#">常熟</a></li>
+									<li><a href="#">昌都</a></li>
+									<li><a href="#">长海县</a></li>
+								</ul>
+								<p>J</p>	
+								<ul class="header_first_J">								
+									<li class='header_first_color'><a href="">大连</a></li>
+									<li class='header_first_color'><a href="">大庆</a></li>
+									<li class='header_first_color'><a href="">大同</a></li>
+									<li class='header_first_color'><a href="">东莞</a></li>
+									<li class='header_first_color'><a href="">丹东</a></li>
+									<li class='header_first_color'><a href="">东营</a></li>
+									<li><a href="">德州</a></li>
+									<li><a href="">达州</a></li>
+									<li class='header_first_color'><a href="">德阳</a></li>
+									<li><a href="">大理</a></li>
+									<li><a href="">定西</a></li>
+									<li><a href="">敦化市</a></li>
+									<li><a href="">大安市</a></li>
+									<li><a href="">德惠市</a></li>
+									<li><a href="">调兵山市</a></li>
+									<li><a href="">灯塔市</a></li>
+									<li><a href="">大石桥市</a></li>
+									<li><a href="">东港市</a></li>
+									<li><a href="">都匀市</a></li>
+									<li><a href="">都江堰市</a></li>
+									<li><a href="">邓州市</a></li>
+									<li><a href="">东阳市</a></li>
+									<li><a href="">当阳市</a></li>
+									<li><a href="">丹江口市</a></li>
+									<li><a href="">大冶市</a></li>
+									<li><a href="">东方市</a></li>
+									<li><a href="">东兴市</a></li>
+									<li><a href="">德兴市</a></li>
+									<li><a href="">德清县</a></li>
+									<li><a href="">丹阳市</a></li>
+									<li><a href="">大丰市</a></li>
+									<li><a href="">东台市</a></li>
+									<li><a href="">定州市</a></li>
+									<li><a href="">敦煌市</a></li>
+									<li><a href="">大兴安岭</a></li>
+									<li><a href="">德宏</a>		</li>
+									<li><a href="">稻城县</a></li>
+								</ul>
+							</div>
+							<div class="header_common_word">
+								<p>K</p>	
+								<ul class="header_first_K">	
+									<li class='header_first_color'><a href="#">鞍山</a></li>
+									<li class='header_first_color'><a href="#">安庆</a></li>
+									<li><a href="#">安阳</a></li>
+									<li><a href="#">安溪县</a></li>
+									<li><a href="#">安吉县</a></li>
+									<li><a href="#">安达市</a></li>
+									<li><a href="#">安宁市</a></li>
+									<li><a href="#">阿图什市</a></li>
+									<li><a href="#">阿拉尔</a></li>
+									<li><a href="#">安陆市</a></li>
+									<li><a href="#">安康</a></li>
+									<li><a href="#">安国市</a></li>
+									<li><a href="#">阿勒泰</a></li>
+									<li><a href="#">阿克苏</a></li>
+									<li><a href="#">阿拉善右旗</a></li>
+									<li><a href="#">阿拉善左旗</a></li>
+									<li><a href="#">阿尔山市</a></li>
+									<li><a href="#">安顺</a></li>
+									<li><a href="#">阿坝</a></li>
+									<li><a href="#">阿里</a></li>
+								</ul>
+								<p>L</p>
+								<ul class="header_first_L">
+									<li class='header_first_color'><a href="#">北京</a></li>	
+									<li class='header_first_color'><a href="#">包头</a></li>	
+									<li class='header_first_color'><a href="#">蚌埠</a></li>	
+									<li class='header_first_color'><a href="#">保定</a></li>	
+									<li class='header_first_color'><a href="#">本溪</a></li>	
+									<li class='header_first_color'><a href="#">宝鸡</a></li>	
+									<li><a href="#">亳州</a></li>	
+									<li><a href="#">滨州</a></li>	
+									<li><a href="#">彬县</a></li>	
+									<li><a href="#">北海</a></li>	
+									<li><a href="#">北安市</a></li>
+									<li><a href="#">北票市</a></li>
+									<li><a href="#">北镇市</a></li>
+									<li><a href="#">北流市</a></li>
+									<li><a href="#">霸州市</a></li>
+									<li><a href="#">泊头市</a></li>
+									<li><a href="#">博乐市</a></li>
+									<li><a href="#">保山</a></li>	
+									<li><a href="#">巴彦淖尔</a></li>
+									<li><a href="#">白山</a></li>	
+									<li><a href="#">毕节</a></li>
+									<li><a href="#">百色</a></li>
+								</ul>
+								<p>M</p>	
+								<ul class="header_first_M">
+									<li class='header_first_color'><a href="#">成都</a></li>
+									<li class='header_first_color'><a href="#">重庆</a></li>
+									<li class='header_first_color'><a href="#">长沙</a></li>
+									<li class='header_first_color'><a href="#">长春</a></li>
+									<li class='header_first_color'><a href="#">常州</a></li>
+									<li class='header_first_color'><a href="#">常德</a></li>
+									<li><a href="#">滁州</a></li>
+									<li><a href="#">赤峰</a></li>
+									<li class='header_first_color'><a href="#">长治</a></li>
+									<li class='header_first_color'><a href="#">沧州</a></li>
+									<li><a href="#">巢湖市</a></li>
+									<li><a href="#">池州</a></li>
+									<li class='header_first_color'><a href="#">承德</a></li>
+									<li class='header_first_color'><a href="#">郴州</a></li>
+									<li><a href="#">长汀县</a></li>
+									<li><a href="#">潮州</a></li>
+									<li><a href="#">楚雄市</a></li>
+									<li><a href="#">赤水市</a></li>
+									<li><a href="#">昌吉</a></li>
+									<li><a href="#">崇州市</a></li>
+									<li><a href="#">长葛市</a></li>
+									<li><a href="#">常宁市</a></li>
+									<li><a href="#">嵊州市</a></li>
+									<li><a href="#">朝阳</a></li>
+									<li><a href="#">赤壁市</a></li>
+									<li><a href="#">岑溪市</a></li>
+									<li><a href="#">长乐市</a></li>
+									<li><a href="#">长兴县</a></li>
+									<li><a href="#">慈溪市</a></li>
+									<li class='header_first_color'><a href="#">常熟</a></li>
+									<li><a href="#">昌都</a></li>
+									<li><a href="#">长海县</a></li>
+								</ul>
+								<p>N</p>	
+								<ul class="header_first_N">								
+									<li class='header_first_color'><a href="">大连</a></li>
+									<li class='header_first_color'><a href="">大庆</a></li>
+									<li class='header_first_color'><a href="">大同</a></li>
+									<li class='header_first_color'><a href="">东莞</a></li>
+									<li class='header_first_color'><a href="">丹东</a></li>
+									<li class='header_first_color'><a href="">东营</a></li>
+									<li><a href="">德州</a></li>
+									<li><a href="">达州</a></li>
+									<li class='header_first_color'><a href="">德阳</a></li>
+									<li><a href="">大理</a></li>
+									<li><a href="">定西</a></li>
+									<li><a href="">敦化市</a></li>
+									<li><a href="">大安市</a></li>
+									<li><a href="">德惠市</a></li>
+									<li><a href="">调兵山市</a></li>
+									<li><a href="">灯塔市</a></li>
+									<li><a href="">大石桥市</a></li>
+									<li><a href="">东港市</a></li>
+									<li><a href="">都匀市</a></li>
+									<li><a href="">都江堰市</a></li>
+									<li><a href="">邓州市</a></li>
+									<li><a href="">东阳市</a></li>
+									<li><a href="">当阳市</a></li>
+									<li><a href="">丹江口市</a></li>
+									<li><a href="">大冶市</a></li>
+									<li><a href="">东方市</a></li>
+									<li><a href="">东兴市</a></li>
+									<li><a href="">德兴市</a></li>
+									<li><a href="">德清县</a></li>
+									<li><a href="">丹阳市</a></li>
+									<li><a href="">大丰市</a></li>
+									<li><a href="">东台市</a></li>
+									<li><a href="">定州市</a></li>
+									<li><a href="">敦煌市</a></li>
+									<li><a href="">大兴安岭</a></li>
+									<li><a href="">德宏</a>		</li>
+									<li><a href="">稻城县</a></li>
+								</ul>
+								<p>P</p>
+								<ul class="header_first_p">								
+									<li class='header_first_color'><a href="">大连</a></li>
+									<li class='header_first_color'><a href="">大庆</a></li>
+									<li class='header_first_color'><a href="">大同</a></li>
+									<li class='header_first_color'><a href="">东莞</a></li>
+									<li class='header_first_color'><a href="">丹东</a></li>
+									<li class='header_first_color'><a href="">东营</a></li>
+									<li><a href="">德州</a></li>
+									<li><a href="">达州</a></li>
+									<li class='header_first_color'><a href="">德阳</a></li>
+									<li><a href="">大理</a></li>
+									<li><a href="">定西</a></li>
+									<li><a href="">敦化市</a></li>
+									<li><a href="">大安市</a></li>
+									<li><a href="">德惠市</a></li>
+									<li><a href="">调兵山市</a></li>
+									<li><a href="">灯塔市</a></li>
+									<li><a href="">大石桥市</a></li>
+									<li><a href="">东港市</a></li>
+									<li><a href="">都匀市</a></li>
+									<li><a href="">都江堰市</a></li>
+									<li><a href="">邓州市</a></li>
+									<li><a href="">东阳市</a></li>
+									<li><a href="">当阳市</a></li>
+									<li><a href="">丹江口市</a></li>
+									<li><a href="">大冶市</a></li>
+									<li><a href="">东方市</a></li>
+									<li><a href="">东兴市</a></li>
+									<li><a href="">德兴市</a></li>
+									<li><a href="">德清县</a></li>
+									<li><a href="">丹阳市</a></li>
+									<li><a href="">大丰市</a></li>
+									<li><a href="">东台市</a></li>
+									<li><a href="">定州市</a></li>
+									<li><a href="">敦煌市</a></li>
+									<li><a href="">大兴安岭</a></li>
+									<li><a href="">德宏</a>		</li>
+									<li><a href="">稻城县</a></li>
+								</ul>
+							</div>
+							<div class="header_common_word">
+								<p>Q</p>	
+								<ul class="header_first_Q">	
+									<li class='header_first_color'><a href="#">鞍山</a></li>
+									<li class='header_first_color'><a href="#">安庆</a></li>
+									<li><a href="#">安阳</a></li>
+									<li><a href="#">安溪县</a></li>
+									<li><a href="#">安吉县</a></li>
+									<li><a href="#">安达市</a></li>
+									<li><a href="#">安宁市</a></li>
+									<li><a href="#">阿图什市</a></li>
+									<li><a href="#">阿拉尔</a></li>
+									<li><a href="#">安陆市</a></li>
+									<li><a href="#">安康</a></li>
+									<li><a href="#">安国市</a></li>
+									<li><a href="#">阿勒泰</a></li>
+									<li><a href="#">阿克苏</a></li>
+									<li><a href="#">阿拉善右旗</a></li>
+									<li><a href="#">阿拉善左旗</a></li>
+									<li><a href="#">阿尔山市</a></li>
+									<li><a href="#">安顺</a></li>
+									<li><a href="#">阿坝</a></li>
+									<li><a href="#">阿里</a></li>
+								</ul>
+								<p>R</p>
+								<ul class="header_first_R">
+									<li class='header_first_color'><a href="#">北京</a></li>	
+									<li class='header_first_color'><a href="#">包头</a></li>	
+									<li class='header_first_color'><a href="#">蚌埠</a></li>	
+									<li class='header_first_color'><a href="#">保定</a></li>	
+									<li class='header_first_color'><a href="#">本溪</a></li>	
+									<li class='header_first_color'><a href="#">宝鸡</a></li>	
+									<li><a href="#">亳州</a></li>	
+									<li><a href="#">滨州</a></li>	
+									<li><a href="#">彬县</a></li>	
+									<li><a href="#">北海</a></li>	
+									<li><a href="#">北安市</a></li>
+									<li><a href="#">北票市</a></li>
+									<li><a href="#">北镇市</a></li>
+									<li><a href="#">北流市</a></li>
+									<li><a href="#">霸州市</a></li>
+									<li><a href="#">泊头市</a></li>
+									<li><a href="#">博乐市</a></li>
+									<li><a href="#">保山</a></li>	
+									<li><a href="#">巴彦淖尔</a></li>
+									<li><a href="#">白山</a></li>	
+									<li><a href="#">毕节</a></li>
+									<li><a href="#">百色</a></li>
+								</ul>
+								<p>S</p>	
+								<ul class="header_first_S">
+									<li class='header_first_color'><a href="#">成都</a></li>
+									<li class='header_first_color'><a href="#">重庆</a></li>
+									<li class='header_first_color'><a href="#">长沙</a></li>
+									<li class='header_first_color'><a href="#">长春</a></li>
+									<li class='header_first_color'><a href="#">常州</a></li>
+									<li class='header_first_color'><a href="#">常德</a></li>
+									<li><a href="#">滁州</a></li>
+									<li><a href="#">赤峰</a></li>
+									<li class='header_first_color'><a href="#">长治</a></li>
+									<li class='header_first_color'><a href="#">沧州</a></li>
+									<li><a href="#">巢湖市</a></li>
+									<li><a href="#">池州</a></li>
+									<li class='header_first_color'><a href="#">承德</a></li>
+									<li class='header_first_color'><a href="#">郴州</a></li>
+									<li><a href="#">长汀县</a></li>
+									<li><a href="#">潮州</a></li>
+									<li><a href="#">楚雄市</a></li>
+									<li><a href="#">赤水市</a></li>
+									<li><a href="#">昌吉</a></li>
+									<li><a href="#">崇州市</a></li>
+									<li><a href="#">长葛市</a></li>
+									<li><a href="#">常宁市</a></li>
+									<li><a href="#">嵊州市</a></li>
+									<li><a href="#">朝阳</a></li>
+									<li><a href="#">赤壁市</a></li>
+									<li><a href="#">岑溪市</a></li>
+									<li><a href="#">长乐市</a></li>
+									<li><a href="#">长兴县</a></li>
+									<li><a href="#">慈溪市</a></li>
+									<li class='header_first_color'><a href="#">常熟</a></li>
+									<li><a href="#">昌都</a></li>
+									<li><a href="#">长海县</a></li>
+								</ul>
+								<p>T</p>	
+								<ul class="header_first_T">								
+									<li class='header_first_color'><a href="">大连</a></li>
+									<li class='header_first_color'><a href="">大庆</a></li>
+									<li class='header_first_color'><a href="">大同</a></li>
+									<li class='header_first_color'><a href="">东莞</a></li>
+									<li class='header_first_color'><a href="">丹东</a></li>
+									<li class='header_first_color'><a href="">东营</a></li>
+									<li><a href="">德州</a></li>
+									<li><a href="">达州</a></li>
+									<li class='header_first_color'><a href="">德阳</a></li>
+									<li><a href="">大理</a></li>
+									<li><a href="">定西</a></li>
+									<li><a href="">敦化市</a></li>
+									<li><a href="">大安市</a></li>
+									<li><a href="">德惠市</a></li>
+									<li><a href="">调兵山市</a></li>
+									<li><a href="">灯塔市</a></li>
+									<li><a href="">大石桥市</a></li>
+									<li><a href="">东港市</a></li>
+									<li><a href="">都匀市</a></li>
+									<li><a href="">都江堰市</a></li>
+									<li><a href="">邓州市</a></li>
+									<li><a href="">东阳市</a></li>
+									<li><a href="">当阳市</a></li>
+									<li><a href="">丹江口市</a></li>
+									<li><a href="">大冶市</a></li>
+									<li><a href="">东方市</a></li>
+									<li><a href="">东兴市</a></li>
+									<li><a href="">德兴市</a></li>
+									<li><a href="">德清县</a></li>
+									<li><a href="">丹阳市</a></li>
+									<li><a href="">大丰市</a></li>
+									<li><a href="">东台市</a></li>
+									<li><a href="">定州市</a></li>
+									<li><a href="">敦煌市</a></li>
+									<li><a href="">大兴安岭</a></li>
+									<li><a href="">德宏</a>		</li>
+									<li><a href="">稻城县</a></li>
+								</ul>
+								<p>W</p>
+								<ul class="header_first_W">								
+									<li class='header_first_color'><a href="">大连</a></li>
+									<li class='header_first_color'><a href="">大庆</a></li>
+									<li class='header_first_color'><a href="">大同</a></li>
+									<li class='header_first_color'><a href="">东莞</a></li>
+									<li class='header_first_color'><a href="">丹东</a></li>
+									<li class='header_first_color'><a href="">东营</a></li>
+									<li><a href="">德州</a></li>
+									<li><a href="">达州</a></li>
+									<li class='header_first_color'><a href="">德阳</a></li>
+									<li><a href="">大理</a></li>
+									<li><a href="">定西</a></li>
+									<li><a href="">敦化市</a></li>
+									<li><a href="">大安市</a></li>
+									<li><a href="">德惠市</a></li>
+									<li><a href="">调兵山市</a></li>
+									<li><a href="">灯塔市</a></li>
+									<li><a href="">大石桥市</a></li>
+									<li><a href="">东港市</a></li>
+									<li><a href="">都匀市</a></li>
+									<li><a href="">都江堰市</a></li>
+									<li><a href="">邓州市</a></li>
+									<li><a href="">东阳市</a></li>
+									<li><a href="">当阳市</a></li>
+									<li><a href="">丹江口市</a></li>
+									<li><a href="">大冶市</a></li>
+									<li><a href="">东方市</a></li>
+									<li><a href="">东兴市</a></li>
+									<li><a href="">德兴市</a></li>
+									<li><a href="">德清县</a></li>
+									<li><a href="">丹阳市</a></li>
+									<li><a href="">大丰市</a></li>
+									<li><a href="">东台市</a></li>
+									<li><a href="">定州市</a></li>
+									<li><a href="">敦煌市</a></li>
+									<li><a href="">大兴安岭</a></li>
+									<li><a href="">德宏</a>		</li>
+									<li><a href="">稻城县</a></li>
+								</ul>
+							</div>
+							<div class="header_common_word">
+								<p>X</p>	
+								<ul class="header_first_X">	
+									<li class='header_first_color'><a href="#">鞍山</a></li>
+									<li class='header_first_color'><a href="#">安庆</a></li>
+									<li><a href="#">安阳</a></li>
+									<li><a href="#">安溪县</a></li>
+									<li><a href="#">安吉县</a></li>
+									<li><a href="#">安达市</a></li>
+									<li><a href="#">安宁市</a></li>
+									<li><a href="#">阿图什市</a></li>
+									<li><a href="#">阿拉尔</a></li>
+									<li><a href="#">安陆市</a></li>
+									<li><a href="#">安康</a></li>
+									<li><a href="#">安国市</a></li>
+									<li><a href="#">阿勒泰</a></li>
+									<li><a href="#">阿克苏</a></li>
+									<li><a href="#">阿拉善右旗</a></li>
+									<li><a href="#">阿拉善左旗</a></li>
+									<li><a href="#">阿尔山市</a></li>
+									<li><a href="#">安顺</a></li>
+									<li><a href="#">阿坝</a></li>
+									<li><a href="#">阿里</a></li>
+								</ul>
+								<p>Y</p>
+								<ul class="header_first_Y">
+									<li class='header_first_color'><a href="#">北京</a></li>	
+									<li class='header_first_color'><a href="#">包头</a></li>	
+									<li class='header_first_color'><a href="#">蚌埠</a></li>	
+									<li class='header_first_color'><a href="#">保定</a></li>	
+									<li class='header_first_color'><a href="#">本溪</a></li>	
+									<li class='header_first_color'><a href="#">宝鸡</a></li>	
+									<li><a href="#">亳州</a></li>	
+									<li><a href="#">滨州</a></li>	
+									<li><a href="#">彬县</a></li>	
+									<li><a href="#">北海</a></li>	
+									<li><a href="#">北安市</a></li>
+									<li><a href="#">北票市</a></li>
+									<li><a href="#">北镇市</a></li>
+									<li><a href="#">北流市</a></li>
+									<li><a href="#">霸州市</a></li>
+									<li><a href="#">泊头市</a></li>
+									<li><a href="#">博乐市</a></li>
+									<li><a href="#">保山</a></li>	
+									<li><a href="#">巴彦淖尔</a></li>
+									<li><a href="#">白山</a></li>	
+									<li><a href="#">毕节</a></li>
+									<li><a href="#">百色</a></li>
+								</ul>
+								<p>Z</p>	
+								<ul class="header_first_Z">
+									<li class='header_first_color'><a href="#">成都</a></li>
+									<li class='header_first_color'><a href="#">重庆</a></li>
+									<li class='header_first_color'><a href="#">长沙</a></li>
+									<li class='header_first_color'><a href="#">长春</a></li>
+									<li class='header_first_color'><a href="#">常州</a></li>
+									<li class='header_first_color'><a href="#">常德</a></li>
+									<li><a href="#">滁州</a></li>
+									<li><a href="#">赤峰</a></li>
+									<li class='header_first_color'><a href="#">长治</a></li>
+									<li class='header_first_color'><a href="#">沧州</a></li>
+									<li><a href="#">巢湖市</a></li>
+									<li><a href="#">池州</a></li>
+									<li class='header_first_color'><a href="#">承德</a></li>
+									<li class='header_first_color'><a href="#">郴州</a></li>
+									<li><a href="#">长汀县</a></li>
+									<li><a href="#">潮州</a></li>
+									<li><a href="#">楚雄市</a></li>
+									<li><a href="#">赤水市</a></li>
+									<li><a href="#">昌吉</a></li>
+									<li><a href="#">崇州市</a></li>
+									<li><a href="#">长葛市</a></li>
+									<li><a href="#">常宁市</a></li>
+									<li><a href="#">嵊州市</a></li>
+									<li><a href="#">朝阳</a></li>
+									<li><a href="#">赤壁市</a></li>
+									<li><a href="#">岑溪市</a></li>
+									<li><a href="#">长乐市</a></li>
+									<li><a href="#">长兴县</a></li>
+									<li><a href="#">慈溪市</a></li>
+									<li class='header_first_color'><a href="#">常熟</a></li>
+									<li><a href="#">昌都</a></li>
+									<li><a href="#">长海县</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header_searchbox">
+					<form class="header_searchbox_con">
+						<p class='header_searchbox_allproduce'>
+							<span class='header_searchbox_title'>所有产品</span>
+							<span class="header_icon icon_arrow"></span>
+						</p>
+						<ul class="header_searchbox_list" style='display:none'>
+							<li>跟团</li>
+							<li>自助</li>
+							<li>游轮</li>
+							<li>景点门票</li>
+							<li>自驾</li>
+							<li>当地参团</li>
+							<li>当地玩乐</li>
+							<li>酒店</li>
+						</ul>
+						<input type="text" placeholder='三亚'>
+						<ul class='header_searchbox_hotcity'>
+							<li>欧洲</li>
+							<li>迪拜</li>
+							<li>泰国</li>
+						</ul>
+						<p class="header_searchimg">
+							<button class="icon_bg btnicon"></button>
+						</p>
+					</form>
+					<!-- 热门搜索 -->
+					<div class="header_hotsearch" style='display:none'>
+						<h3>热门搜索</h3>
+						<a herf='#' class="header_click_close">X</a>
+						<div class="header_hotsearch_list">
+							<p class='header_hotsearch_title'>国内</p>
+							<ul class="header_hotsearch_city">
+								<li><a href="#">云南</a></li>
+								<li><a href="#">厦门</a></li>
+								<li><a href="#">桂林</a></li>
+								<li><a href="#">三亚</a></li>
+								<li><a href="#">北京</a></li>
+								<li><a href="#">张家界</a></li>
+								<li><a href="#">珠海</a></li>
+								<li><a href="#">惠州</a></li>
+								<li><a href="#">丽江</a></li>
+								<li><a href="#">九寨沟</a></li>
+								<li><a href="#">清远</a></li>
+								<li><a href="#">东部华侨城</a></li>
+								<li><a href="#">广州</a></li>
+								<li><a href="#">广东</a></li>
+								<li><a href="#">巽寮湾</a></li>
+							</ul>
+							<p class='header_hotsearch_title'>出境</p>
+							<ul class="header_hotsearch_city">
+						     	<li><a href="#">泰国</a></li>
+							    <li><a href="#">香港</a></li>
+							    <li><a href="#">韩国</a></li>
+							    <li><a href="#">巴厘岛</a></li>
+							    <li><a href="#">日本</a></li>
+							    <li><a href="#">马尔代夫</a></li>
+							    <li><a href="#">澳门</a></li>
+							    <li><a href="#">欧洲</a></li> 
+							    <li><a href="#">台湾</a></li> 
+							    <li><a href="#">新加坡</a></li> 
+							    <li><a href="#">普吉岛</a></li> 
+							    <li><a href="#">迪拜</a></li>
+							    <li><a href="#">俄罗斯</a></li>
+							    <li><a href="#">沙巴</a></li> 
+							    <li><a href="#">美国</a></li>
+							</ul>
+							<p class='header_hotsearch_title'>主题</p>
+							<ul class="header_hotsearch_city">
+						        <li><a href="#">香港迪士尼</a>
+						        </li> <li><a href="#">长隆水上乐园</a></li> 
+						        <li><a href="#">香港迪士尼乐园</a></li> 
+						        <li><a href="#">温泉</a></li> 
+						        <li><a href="#">清远漂流</a></li> 
+						        <li><a href="#">漂流</a></li> 
+						        <li><a href="#">国庆</a></li> 
+						        <li><a href="#">上海迪士尼乐园</a></li>
+							</ul>
+						</div>
+					</div>
+					<p class='header_searchbox_high'>
+						<span>高级搜索</span>
+						<span class='header_icon icon_arrow'></span>
+					</p>
+					<!-- 高级搜索 -->
+					<div class="header_high_con" style='display:none'>
+						<div class="header_high_con_filter">
+							<h3>基本条件</h3>
+							<a herf='#' class="header_click_close">X</a>
+							<div class="header_normal_filter header_normal_title">
+								<div class="header_normal_keyword header_clear">
+									<p>关键字</p>
+									<form class='header_normal_search'><input type="text" placeholder='请输入目的地、主题、关键字'></form>
+								</div>
+								<div class='header_normal_type header_clear'>
+									<p>类型</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class='header_normal_days header_clear'>
+									<p>行程天数</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>1天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>2天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>3天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>4天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>5天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>6天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>7天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>8天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>9天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>10天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>11天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>12天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>13天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>14天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>15天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>16天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>17天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>18天
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>19天
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class="header_normal_price header_clear">
+									<p>价格区间</p>
+									<form class='header_price'>
+										<input type="text" placeholder='￥'>
+										<span>-</span>
+										<input type="text" placeholder='￥'>
+									</form>
+								</div>
+							</div>
+
+							<!-- 更多条件 -->
+							<div class="header_normal_morefilter header_normal_title" style='display:none'>
+								<h3>更多条件</h3>
+								<div class="header_normal_trantype header_clear">
+									<p>交通类型</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class="header_normal_specialproduce header_clear">
+									<p>产品特色</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class="header_normal_specialteam header_clear">
+									<p>组团特色</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class="header_normal_housetype header_clear">
+									<p>住宿类型</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class="header_normal_hotelsign header_clear">
+									<p>酒店品牌</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+								<div class="header_normal_bymeal header_clear">
+									<p>含餐</p>
+									<p class='header_nolimit header_checkbox_active'>不限</p>
+									<ul class="header_normal_con" style='height:28px'>
+										
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>跟团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自助
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>景点门票
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地参团
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>当地玩乐
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>游轮
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>自驾游
+										</li>
+										<li>
+											<span class='checkbox'></span>
+											<span class='checkbox_got spirit'></span>酒店
+										</li>
+									</ul>
+									<p class='header_checkbox_more'>
+										<span></span>
+										<span class='header_more'>更多</span>
+									</p>
+								</div>
+							</div>
+							<!-- 点击更多条件 显示更多条件内容 -->
+							<div class="header_normal_showall">
+								<div class="header_normal_showcon">
+									<a href="#">更多条件（交通类型、住宿类型、组团特色、产品特色）</a>
+								</div>
+							</div>
+							<!-- 搜索按钮 -->
+							<div class="header_normal_btn">
+								<input type="submit" value='搜索'>
+								<a href="#">清除搜索条件</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="header_num">
+					<img src="images/common/site_contact_v3.png">
+				</div>
+			</div>
+
+			<!-- 头部搜索栏 结束-->
+			
+			<!-- 导航 开始 -->
+			<div class="header_nav_bg">
+				<div class="header_nav">
+					<ul class='header_nav_list'>
+						<li class='header_nav_first_list header_nav_active'><a href="#">首页</a></li>
+						<li class='header_nav_first_list'>
+							<a href="#">跟团游</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span>
+							<!-- 跟团游二级菜单 -->
+							<div class="header_nav_second_con" style='display:none'>
+								<ul class='header_nav_second_list'>
+									<li class='second_color'><a href="#">出境跟团</a></li>
+									<li><a href="#">国内跟团</a></li>
+									<li><a href="#">周边跟团</a></li>
+									<li><a href="#">当地参团</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class='header_nav_first_list'>
+							<a href="#">自助游</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span>
+							<!-- 跟团游二级菜单 -->
+							<div class="header_nav_second_con" style='display:none;left:-152px'>
+								<ul class='header_nav_second_list'>
+									<li><a href="#">国内自助</a></li>
+									<li class='second_color'><a href="#">出境自助</a></li>
+									<li class='second_color'><a href="#">机票+酒店</a></li>
+									<li><a href="#">火车票+酒店</a></li>
+									<li class='second_color'><a href="#">当地玩乐</a></li>
+									<li><a href="#">签证</a></li>
+									<li><a href="#">出境WIFI</a></li>
+								</ul>
+							</div>
+							</li>
+						<li class='header_nav_first_list'><a href="#">邮轮</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">自驾</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span><span class='index_icon icon_nav_top'></span></li>
+						<li class='header_nav_first_list'><a href="#">机票</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">酒店</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">火车/汽车票</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">门票</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">特卖会</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">品质游</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">出游服务</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">定制游</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">金融</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+						<li class='header_nav_first_list'><a href="#">攻略</a><span class='icon_bg nav_list_bg'></span><span class='header_icon icon_nav' style='display:none'></span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_nav_second_bg" style='display:none'>
+			</div>
+			
+
+			<!-- 导航 结束 -->
+
+		</div>
+
+		<!-- header 结束-->
+		
+		<!-- content 开始 -->
+
+		<div id="content">
+		<!-- 导航 -->
+			<div class="content_banner_bg">
+				<!-- banner轮播 图片json动态创建 -->
+				<ul class="content_banner_list"></ul>
+				<div class="content_banner_center_bg">
+					<!-- banner中间内容 -->
+					<div class="content_banner_center">
+						<!-- 左右切换左右图片 -->
+						<div class="content_banner_next_pre">
+							<p class="banner_slide slide_prev"></p>
+							<p class="banner_slide slide_next"></p>	
+						</div>
+						<!-- banner轮播 切换相应title标签  （title 动态json创建）--> 
+						<ul class="content_banner_title"></ul>
+						<!-- 热门推荐 -->
+						<ul class="content_banner_recommed">
+							<li style='width:122px'><a href="#"><img src="images/index/recommed_01.jpg" style='left:-97px'></a></li>
+							<li><a href="#"><img src="images/index/recommed_02.jpg"></a></li>
+							<li><a href="#"><img src="images/index/recommed_03.jpg"></a></li>
+							<li><a href="#"><img src="images/index/recommed_04.jpg"></a></li>
+							<li><a href="#"><img src="images/index/recommed_05.jpg"></a></li>
+							<li><a href="#"><img src="images/index/recommed_06.jpg"></a></li>
+							<li><a href="#"><img src="images/index/recommed_07.jpg"></a></li>
+						</ul>
+					</div>	
+					<!-- banner轮播 两侧内容 -->
+					<div class="content_type_side">
+						<!-- 左侧 导航菜单 -->
+						<div class="content_type_navside">
+							<ul class="content_type_first_nav">
+								<li class="type_first_active"><span class='content_tral active catalog_icon'></span>旅游度假</li>
+								<li><span class='content_flight catalog_icon'></span>机票</li>
+								<li><span class='content_hotel catalog_icon'></span>酒店</li>
+								<li><span class='content_package catalog_icon'></span>超级自由行</li>
+								<li><span class='content_ticket catalog_icon'></span>火车汽车</li>
+								<li><span class='content_cruise catalog_icon'></span>邮轮 签证</li>
+								<li><span class='content_local catalog_icon'></span>门票 玩乐</li>
+							</ul> 
+							<!-- 二级菜单详情 -->
+							<ul class="content_type_tral content_second_type">
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+								<li>
+									<p><strong><a href="#">瓜果亲子游</a> <a href="#">海岛</a></strong></p>
+									<span><a href="#">蜜月</a></span>
+									<span><a href="#">免签</a></span>
+									<span><a href="#">户外游</a></span>
+									<!--<span><a href="#">周末</a></span>-->
+								</li>
+							</ul>
+							<div class="content_type_flight content_second_type" style='display:none'>
+								<p class="content_type_flit_tic">
+									<span class=" type_flit_active">国内机票1</span><span>国外机票</span>
+								</p>
+								<p class="content_type_mil content_type_mil_single">
+									<span class="catalog_icon content_radio_check"></span>
+									<span>单程</span>
+								</p>
+								<p class="content_type_mil content_type_mil_round">
+									<span class="catalog_icon"></span>
+									<span>往返</span>
+								</p>
+								<!-- 表单项 -->
+								<div class="content_second_verify">
+									<form class="content_second_form">
+										<span>出发地 |</span>
+										<input type="text" value='深圳'>
+									</form>
+									<span class="content_second_change catalog_icon"></span>
+									<form class="content_second_form content_second_right">
+										<span>目的地 |</span>
+										<input type="text" value='请填写目的地'>
+									</form>
+									<form class="content_second_form">
+										<span>出发 |</span>
+										<input class="datenow" type="text" value=''>
+									</form>
+									<form class="content_second_form content_second_right content_second_form_round" style="display:none">
+										<span>返回 |</span>
+										<input type="text" value='2016-09-05 周一'>
+									</form>
+								</div>
+								<!-- 数量和年龄 -->
+								<div class="content_second_peopleage">
+									<form class="content_second_form content_second_num" >
+										<span>成人</span>
+										<input type="text" value='1'>
+									</form>
+									<ul class="content_second_num_all content_second_all">
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+									</ul>
+									<form class="content_second_form content_second_age" >
+										<span>儿童（2-12周岁）</span>
+										<input type="text" value='0'>
+									</form>
+									<ul class="content_second_age_all content_second_all">
+										<li>0</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
+									<p class="content_second_search"><a href="#">搜索</a></p>
+								</div>
+								<!-- 下图 -->
+								<div class="content_second_pic">
+									<a href="#"><img src="images/index/jp.jpg"></a>
+								</div>
+								<p class="content_second_bottom">
+									<img src="images/index/jipiao.jpg">
+								</p>
+								<span class='second_close catalog_icon'></span>
+							</div>
+							<div class="content_type_flight content_second_type" style='display:none'>
+								<p class="content_type_flit_tic">
+									<span class=" type_flit_active">国内机票2</span><span>国外机票</span>
+								</p>
+								<p class="content_type_mil content_type_mil_single">
+									<span class="catalog_icon content_radio_check"></span>
+									<span>单程</span>
+								</p>
+								<p class="content_type_mil content_type_mil_round">
+									<span class="catalog_icon"></span>
+									<span>往返</span>
+								</p>
+								<!-- 表单项 -->
+								<div class="content_second_verify">
+									<form class="content_second_form">
+										<span>出发地 |</span>
+										<input type="text" value='深圳'>
+									</form>
+									<span class="content_second_change catalog_icon"></span>
+									<form class="content_second_form content_second_right">
+										<span>目的地 |</span>
+										<input type="text" value='请填写目的地'>
+									</form>
+									<form class="content_second_form">
+										<span>出发 |</span>
+										<input type="text" value='2016-09-03 周六'>
+									</form>
+									<form class="content_second_form content_second_right content_second_form_round" style="display:none">
+										<span>返回 |</span>
+										<input type="text" value='2016-09-05 周一'>
+									</form>
+								</div>
+								<!-- 数量和年龄 -->
+								<div class="content_second_peopleage">
+									<form class="content_second_form content_second_num" >
+										<span>成人</span>
+										<input type="text" value='1'>
+									</form>
+									<ul class="content_second_num_all content_second_all">
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+									</ul>
+									<form class="content_second_form content_second_age" >
+										<span>儿童（2-12周岁）</span>
+										<input type="text" value='0'>
+									</form>
+									<ul class="content_second_age_all content_second_all">
+										<li>0</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
+									<p class="content_second_search"><a href="#">搜索</a></p>
+								</div>
+								<!-- 下图 -->
+								<div class="content_second_pic">
+									<a href="#"><img src="images/index/jp.jpg"></a>
+								</div>
+								<p class="content_second_bottom">
+									<img src="images/index/jipiao.jpg">
+								</p>
+								<span class='second_close catalog_icon'></span>
+							</div>
+							<div class="content_type_flight content_second_type" style='display:none'>
+								<p class="content_type_flit_tic">
+									<span class=" type_flit_active">国内机票3</span><span>国外机票</span>
+								</p>
+								<p class="content_type_mil content_type_mil_single">
+									<span class="catalog_icon content_radio_check"></span>
+									<span>单程</span>
+								</p>
+								<p class="content_type_mil content_type_mil_round">
+									<span class="catalog_icon"></span>
+									<span>往返</span>
+								</p>
+								<!-- 表单项 -->
+								<div class="content_second_verify">
+									<form class="content_second_form">
+										<span>出发地 |</span>
+										<input type="text" value='深圳'>
+									</form>
+									<span class="content_second_change catalog_icon"></span>
+									<form class="content_second_form content_second_right">
+										<span>目的地 |</span>
+										<input type="text" value='请填写目的地'>
+									</form>
+									<form class="content_second_form">
+										<span>出发 |</span>
+										<input type="text" value='2016-09-03 周六'>
+									</form>
+									<form class="content_second_form content_second_right content_second_form_round" style="display:none">
+										<span>返回 |</span>
+										<input type="text" value='2016-09-05 周一'>
+									</form>
+								</div>
+								<!-- 数量和年龄 -->
+								<div class="content_second_peopleage">
+									<form class="content_second_form content_second_num" >
+										<span>成人</span>
+										<input type="text" value='1'>
+									</form>
+									<ul class="content_second_num_all content_second_all">
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+									</ul>
+									<form class="content_second_form content_second_age" >
+										<span>儿童（2-12周岁）</span>
+										<input type="text" value='0'>
+									</form>
+									<ul class="content_second_age_all content_second_all">
+										<li>0</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
+									<p class="content_second_search"><a href="#">搜索</a></p>
+								</div>
+								<!-- 下图 -->
+								<div class="content_second_pic">
+									<a href="#"><img src="images/index/jp.jpg"></a>
+								</div>
+								<p class="content_second_bottom">
+									<img src="images/index/jipiao.jpg">
+								</p>
+								<span class='second_close catalog_icon'></span>
+							</div>
+							<div class="content_type_flight content_second_type" style='display:none'>
+								<p class="content_type_flit_tic">
+									<span class=" type_flit_active">国内机票4</span><span>国外机票</span>
+								</p>
+								<p class="content_type_mil content_type_mil_single">
+									<span class="catalog_icon content_radio_check"></span>
+									<span>单程</span>
+								</p>
+								<p class="content_type_mil content_type_mil_round">
+									<span class="catalog_icon"></span>
+									<span>往返</span>
+								</p>
+								<!-- 表单项 -->
+								<div class="content_second_verify">
+									<form class="content_second_form">
+										<span>出发地 |</span>
+										<input type="text" value='深圳'>
+									</form>
+									<span class="content_second_change catalog_icon"></span>
+									<form class="content_second_form content_second_right">
+										<span>目的地 |</span>
+										<input type="text" value='请填写目的地'>
+									</form>
+									<form class="content_second_form">
+										<span>出发 |</span>
+										<input type="text" value='2016-09-03 周六'>
+									</form>
+									<form class="content_second_form content_second_right content_second_form_round" style="display:none">
+										<span>返回 |</span>
+										<input type="text" value='2016-09-05 周一'>
+									</form>
+								</div>
+								<!-- 数量和年龄 -->
+								<div class="content_second_peopleage">
+									<form class="content_second_form content_second_num" >
+										<span>成人</span>
+										<input type="text" value='1'>
+									</form>
+									<ul class="content_second_num_all content_second_all">
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+									</ul>
+									<form class="content_second_form content_second_age" >
+										<span>儿童（2-12周岁）</span>
+										<input type="text" value='0'>
+									</form>
+									<ul class="content_second_age_all content_second_all">
+										<li>0</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
+									<p class="content_second_search"><a href="#">搜索</a></p>
+								</div>
+								<!-- 下图 -->
+								<div class="content_second_pic">
+									<a href="#"><img src="images/index/jp.jpg"></a>
+								</div>
+								<p class="content_second_bottom">
+									<img src="images/index/jipiao.jpg">
+								</p>
+								<span class='second_close catalog_icon'></span>
+							</div>
+							<div class="content_type_flight content_second_type" style='display:none'>
+								<p class="content_type_flit_tic">
+									<span class=" type_flit_active">国内机票5</span><span>国外机票</span>
+								</p>
+								<p class="content_type_mil content_type_mil_single">
+									<span class="catalog_icon content_radio_check"></span>
+									<span>单程</span>
+								</p>
+								<p class="content_type_mil content_type_mil_round">
+									<span class="catalog_icon"></span>
+									<span>往返</span>
+								</p>
+								<!-- 表单项 -->
+								<div class="content_second_verify">
+									<form class="content_second_form">
+										<span>出发地 |</span>
+										<input type="text" value='深圳'>
+									</form>
+									<span class="content_second_change catalog_icon"></span>
+									<form class="content_second_form content_second_right">
+										<span>目的地 |</span>
+										<input type="text" value='请填写目的地'>
+									</form>
+									<form class="content_second_form">
+										<span>出发 |</span>
+										<input type="text" value='2016-09-03 周六'>
+									</form>
+									<form class="content_second_form content_second_right content_second_form_round" style="display:none">
+										<span>返回 |</span>
+										<input type="text" value='2016-09-05 周一'>
+									</form>
+								</div>
+								<!-- 数量和年龄 -->
+								<div class="content_second_peopleage">
+									<form class="content_second_form content_second_num" >
+										<span>成人</span>
+										<input type="text" value='1'>
+									</form>
+									<ul class="content_second_num_all content_second_all">
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+									</ul>
+									<form class="content_second_form content_second_age" >
+										<span>儿童（2-12周岁）</span>
+										<input type="text" value='0'>
+									</form>
+									<ul class="content_second_age_all content_second_all">
+										<li>0</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
+									<p class="content_second_search"><a href="#">搜索</a></p>
+								</div>
+								<!-- 下图 -->
+								<div class="content_second_pic">
+									<a href="#"><img src="images/index/jp.jpg"></a>
+								</div>
+								<p class="content_second_bottom">
+									<img src="images/index/jipiao.jpg">
+								</p>
+								<span class='second_close catalog_icon'></span>
+							</div>
+							<div class="content_type_flight content_second_type" style='display:none'>
+								<p class="content_type_flit_tic">
+									<span class=" type_flit_active">国内机票6</span><span>国外机票</span>
+								</p>
+								<p class="content_type_mil content_type_mil_single">
+									<span class="catalog_icon content_radio_check"></span>
+									<span>单程</span>
+								</p>
+								<p class="content_type_mil content_type_mil_round">
+									<span class="catalog_icon"></span>
+									<span>往返</span>
+								</p>
+								<!-- 表单项 -->
+								<div class="content_second_verify">
+									<form class="content_second_form">
+										<span>出发地 |</span>
+										<input type="text" value='深圳'>
+									</form>
+									<span class="content_second_change catalog_icon"></span>
+									<form class="content_second_form content_second_right">
+										<span>目的地 |</span>
+										<input type="text" value='请填写目的地'>
+									</form>
+									<form class="content_second_form">
+										<span>出发 |</span>
+										<input type="text" value='2016-09-03 周六'>
+									</form>
+									<form class="content_second_form content_second_right content_second_form_round" style="display:none">
+										<span>返回 |</span>
+										<input type="text" value='2016-09-05 周一'>
+									</form>
+								</div>
+								<!-- 数量和年龄 -->
+								<div class="content_second_peopleage">
+									<form class="content_second_form content_second_num" >
+										<span>成人</span>
+										<input type="text" value='1'>
+									</form>
+									<ul class="content_second_num_all content_second_all">
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+										<li>7</li>
+										<li>8</li>
+										<li>9</li>
+									</ul>
+									<form class="content_second_form content_second_age" >
+										<span>儿童（2-12周岁）</span>
+										<input type="text" value='0'>
+									</form>
+									<ul class="content_second_age_all content_second_all">
+										<li>0</li>
+										<li>1</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+										<li>5</li>
+										<li>6</li>
+									</ul>
+									<p class="content_second_search"><a href="#">搜索</a></p>
+								</div>
+								<!-- 下图 -->
+								<div class="content_second_pic">
+									<a href="#"><img src="images/index/jp.jpg"></a>
+								</div>
+								<p class="content_second_bottom">
+									<img src="images/index/jipiao.jpg">
+								</p>
+								<span class='second_close catalog_icon'></span>
+							</div>
+						</div>
+					</div>	
+					<div class="content_type_news">
+						<div class="content_hot_pointer">
+							<p class="content_hot_satisfied">
+								<span class='content_hot_num'>91</span>
+								<span class='content_hot_du'>%</span>
+								<span class='content_hot_txt'>满意度</span>
+							</p>
+							<div class="content_hot_tralnum">
+								<p><span>出游人数</span><span>38000000+</span></p>
+								<p><span>点评人数</span><span>2900000+</span></p>
+							</div>
+						</div>
+						<div class="content_newslist_box">
+							<ul class="content_newslist"></ul>
+						</div>
+						
+						<p class="content_news_pic"><img src="images/index/SunEnsure0526.jpg"></p>
+						<p class="content_news_freepass"><img src="images/index/Cii9EVdGsKCIfOCrAAAdhd3XSkcAAGLjAGi51kAAB2d26.jpeg"></p>
+						<p class="content_news_servic"><span>出游服务</span></p>
+						<div class="content_news_main">
+							<div class="content_news_mainL">
+								<a href="#">
+									<img src="images/index/Cii9EFc5iqOIAFG_AAACEVDm6kAAAFUVAP__dcAAAIp250.png">
+									<span>签证</span>
+								</a>
+								<a href="#">
+									<img src="images/index/Cii9EVc5i7KIT4M8AAACg1gwM_YAAFzUwP__WUAAAKb810.png">
+									<span>全球WIFI</span>
+								</a>
+								<a href="#">
+									<img src="images/index/Cii9EFc5jEeIAng8AAACE7eqhoAAAFzfQP__dUAAAIr903.png">
+									<span>途牛向导</span>
+								</a>
+							</div>
+							<div class="content_news_mainR">
+								<a href="#">
+									<img src="images/index/Cii9EFc5i2qIKxR5AAAB_1-13GUAAFv4gP__ekAAAIX727.png">
+									<span>当地玩乐</span>
+								</a>
+								<a href="#">
+									<img src="images/index/Cii9EFc5i_aIewqOAAACFeMfKCoAAFvXwP__dMAAAIt939.png">
+									<span>租车用车</span>
+								</a>
+								<a href="#">
+									<img src="images/index/Cii9EVdjsAuIBxLWAAAF27e5_f4AAGgEwP_-g0AAAXz739.png">
+									<span>婚纱旅拍</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="content_center_con">
+				<!-- 内容左侧全部内容 -->
+				<div class="content_center_conleft">
+					<div class="content_center_left_con content_center_common">
+						<div class="content_title_box">
+							<ul class="content_top_con_title content_title_common">
+								<li class="con_title_active con_title_choinc">超值特卖</li>
+								<li class="con_title_choinc">超级自由行</li>
+								<li class="con_title_choinc">旅游分期</li>
+								<li class="con_title_choinc">特价机票</li>
+								<li class="con_title_choinc">特价酒店</li>
+								<li class="con_title_choinc">特价签证</li>
+							</ul>
+							<span><a href="#">更多</a> ></span>
+						</div>
+						<ul class="content_top_conmain content_top_titlesale"></ul>
+						<ul class="content_top_conmain content_top_titlefree" style="display:none"></ul>
+						<ul class="content_top_conmain content_top_titlesale" style="display:none"></ul>
+						<ul class="content_top_conmain content_top_titlefree" style="display:none"></ul>
+						<ul class="content_top_conmain content_top_titlesale" style="display:none"></ul>
+						<ul class="content_top_conmain content_top_titlefree" style="display:none"></ul>
+					</div>
+					<!-- 金秋特惠 -->
+					<div class="content_center_left_con content_center_common">
+						<div class="content_title_box content_autumn_box">
+							<h2>金秋特惠</h2>
+							<ul class="content_top_con_autumn content_title_common">
+								<li class="con_autumn_active con_autumn_choinc">出境长线</li>
+								<li class="con_autumn_choinc">出境短线</li>
+								<li class="con_autumn_choinc">海岛/游轮</li>
+								<li class="con_autumn_choinc">出境自助</li>
+								<li class="con_autumn_choinc">国内跟团</li>
+								<li class="con_autumn_choinc">国内自助</li>
+								<li class="con_autumn_choinc">周边/自驾</li>
+							</ul>
+						</div>
+						<div class="content_main_common content_main_autumn">
+							<div class="content_main_common_left">
+								<ul class="content_autumn_list">
+									<li>中秋赏月 机票1折起</li>
+									<li>出境短线错峰享千元礼</li>
+									<li>热夏海岛 任性游</li>
+								</ul>
+								<p class="content_autumn_botmpic"><a href="#"><img src="images/index/rw9.jpg"></a></p>
+							</div>
+							<ul class="content_autumn_longline content_comain_common" ></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+						</div>
+					</div>
+					<!-- 出境长线 -->
+					<div class="content_center_left_con content_center_common">
+						<div class="content_title_box content_outLongline_box">
+							<h2>出境长线</h2>
+							<ul class="content_top_con_outLongline content_title_common">
+								<li class="con_outLongline_active con_outLongline_choinc">精选</li>
+								<li class="con_outLongline_choinc">欧洲</li>
+								<li class="con_outLongline_choinc">美洲</li>
+								<li class="con_outLongline_choinc">中东非</li>
+								<li class="con_outLongline_choinc">澳新</li>
+								<li class="con_outLongline_choinc">马代</li>
+								<li class="con_outLongline_choinc">大海岛</li>
+							</ul>
+							<span><a href="#">更多产品</a></span>
+						</div>
+						<div class="content_main_common content_main_outLongline">
+							<div class="content_main_common_left">
+								<p class="content_left_title"><strong>热门景点玩法</strong></p>
+								<ul class="content_left_common_list">
+								    <li><a href="#">法瑞意</a></li>
+								    <li><a href="#">黄石公园</a></li>
+								    <li><a href="#">澳新连线</a></li>
+								    <li><a href="#">神秘古国埃及</a></li>
+								    <li><a href="#">马尔代夫</a></li>
+								    <li><a href="#">毛里求斯</a></li>
+								</ul>
+								<p class="content_left_conmmon_pic"><a href="#"><img src="images/index/C13.jpg"></a></p>
+							</div>
+							<ul class="content_autumn_longline content_comain_common prolink" ></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+						</div>
+					</div>
+					<!-- 出境短线 -->
+					<div class="content_center_left_con content_center_common">
+						<div class="content_title_box content_outLongline_box">
+							<h2>出境短线</h2>
+							<ul class="content_top_con_outLongline content_title_common">
+								<li class="con_outLongline_active con_outLongline_choinc">精选</li>
+								<li class="con_outLongline_choinc">泰国</li>
+								<li class="con_outLongline_choinc">日韩</li>
+								<li class="con_outLongline_choinc">海岛</li>
+								<li class="con_outLongline_choinc">东南亚</li>
+								<li class="con_outLongline_choinc">越柬南亚</li>
+								<li class="con_outLongline_choinc">港澳台</li>
+							</ul>
+							<span><a href="#">更多产品</a></span>
+						</div>
+						<div class="content_main_common content_main_outLongline">
+							<div class="content_main_common_left">
+								<p class="content_left_title"><strong>热门景点玩法</strong></p>
+								<ul class="content_left_common_list">
+								    <li><a href="#">法瑞意</a></li>
+								    <li><a href="#">黄石公园</a></li>
+								    <li><a href="#">澳新连线</a></li>
+								    <li><a href="#">神秘古国埃及</a></li>
+								    <li><a href="#">马尔代夫</a></li>
+								    <li><a href="#">毛里求斯</a></li>
+								</ul>
+								<p class="content_left_conmmon_pic"><a href="#"><img src="images/index/C13.jpg"></a></p>
+							</div>
+							<ul class="content_autumn_longline content_comain_common" ></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+						</div>
+					</div>
+					<!-- 国内旅游 -->
+					<div class="content_center_left_con content_center_common">
+						<div class="content_title_box content_outLongline_box">
+							<h2>国内旅游</h2>
+							<ul class="content_top_con_outLongline content_title_common">
+								<li class="con_outLongline_active con_outLongline_choinc">精选</li>
+								<li class="con_outLongline_choinc">泰国</li>
+								<li class="con_outLongline_choinc">日韩</li>
+								<li class="con_outLongline_choinc">海岛</li>
+								<li class="con_outLongline_choinc">东南亚</li>
+								<li class="con_outLongline_choinc">越柬南亚</li>
+								<li class="con_outLongline_choinc">港澳台</li>
+							</ul>
+							<span><a href="#">更多产品</a></span>
+						</div>
+						<div class="content_main_common content_main_outLongline">
+							<div class="content_main_common_left">
+								<p class="content_left_title"><strong>热门景点玩法</strong></p>
+								<ul class="content_left_common_list">
+								    <li><a href="#">法瑞意</a></li>
+								    <li><a href="#">黄石公园</a></li>
+								    <li><a href="#">澳新连线</a></li>
+								    <li><a href="#">神秘古国埃及</a></li>
+								    <li><a href="#">马尔代夫</a></li>
+								    <li><a href="#">毛里求斯</a></li>
+								</ul>
+								<p class="content_left_conmmon_pic"><a href="#"><img src="images/index/C13.jpg"></a></p>
+							</div>
+							<ul class="content_autumn_longline content_comain_common" ></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+						</div>
+					</div>
+					<!-- 周边旅游 -->
+					<div class="content_center_left_con content_center_common">
+						<div class="content_title_box content_outLongline_box">
+							<h2>周边旅游</h2>
+							<ul class="content_top_con_outLongline content_title_common">
+								<li class="con_outLongline_active con_outLongline_choinc">精选</li>
+								<li class="con_outLongline_choinc">泰国</li>
+								<li class="con_outLongline_choinc">日韩</li>
+								<li class="con_outLongline_choinc">海岛</li>
+								<li class="con_outLongline_choinc">东南亚</li>
+								<li class="con_outLongline_choinc">越柬南亚</li>
+								<li class="con_outLongline_choinc">港澳台</li>
+							</ul>
+							<span><a href="#">更多产品</a></span>
+						</div>
+						<div class="content_main_common content_main_outLongline">
+							<div class="content_main_common_left">
+								<p class="content_left_title"><strong>热门景点玩法</strong></p>
+								<ul class="content_left_common_list">
+								    <li><a href="#">法瑞意</a></li>
+								    <li><a href="#">黄石公园</a></li>
+								    <li><a href="#">澳新连线</a></li>
+								    <li><a href="#">神秘古国埃及</a></li>
+								    <li><a href="#">马尔代夫</a></li>
+								    <li><a href="#">毛里求斯</a></li>
+								</ul>
+								<p class="content_left_conmmon_pic"><a href="#"><img src="images/index/C13.jpg"></a></p>
+							</div>
+							<ul class="content_autumn_longline content_comain_common" ></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_longline content_comain_common" style="display:none"></ul>
+							<ul class="content_autumn_shortline content_comain_common" style="display:none"></ul>
+						</div>
+					</div>
+				</div>
+				<!-- 内容右侧全部内容 -->
+				<div class="content_center_conright">
+					<div class="content_right_title">	
+						<h2>热门头条</h2>
+						<ul class="content_right_news_list">
+						</ul>
+					</div>
+					<ul class="content_right_aside_list">
+						<li><a href="#"><img src="images/index/Cii-TlfHmBKIHGjOAAAicjRgkfQAAB7cgP_1LkAACKK72.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii9EFa0YZGIFA3xAAAdJssQCTcAAByHgH3OEkAAB0-39.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii-Tld_aC-IfMFMAAAWpq8On6IAAADfwMHTVsAABa-17.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii9EVcUfMaIC_WYAAAszp5yeT4AADVzQJmKWMAACzm77.jpeg" alt=""></a></li>
+					</ul>
+					<ul class="content_right_aside_list">
+						<li><a href="#"><img src="images/index/Cii-TlfHmBKIHGjOAAAicjRgkfQAAB7cgP_1LkAACKK72.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii9EFa0YZGIFA3xAAAdJssQCTcAAByHgH3OEkAAB0-39.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii-Tld_aC-IfMFMAAAWpq8On6IAAADfwMHTVsAABa-17.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii9EVcUfMaIC_WYAAAszp5yeT4AADVzQJmKWMAACzm77.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii-Tld_aC-IfMFMAAAWpq8On6IAAADfwMHTVsAABa-17.jpeg" alt=""></a></li>
+						<li><a href="#"><img src="images/index/Cii9EVcUfMaIC_WYAAAszp5yeT4AADVzQJmKWMAACzm77.jpeg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="content_bottom_tourism_wrap">
+					<div class="tourism_wrap_title">
+ 	  					<h2>旅游合作局</h2><p>更多旅游局合作</p>
+					</div>
+					<div class="tourism_wrap_content_box">
+						<ul class="tourism_wrap_content">
+							<li>
+								<a href="#"><img src="images/index/new_austr.jpg" height="40" width="100"></a>
+								<p>澳大利亚旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Berlin.jpg" height="40" width="100"></a>
+								<p>柏林旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/canada_bld.jpg" height="40" width="100"></a>
+								<p>加拿大不列颠哥伦比亚省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/renchuan.jpg" height="40" width="100"></a>
+								<p>韩国仁川机场</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Canada_kbk.jpg" height="40" width="100"></a>
+								<p>加拿大魁北克省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/abuzabi.png" height="40" width="100"></a>
+								<p>阿布扎比旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/adlybld.jpg" height="40" width="100"></a>
+								<p>澳大利亚北领地</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Hawaiian.JPG" height="40" width="100"></a>
+								<p>夏威夷旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/NewZealand.jpg" height="40" width="100"></a>
+								<p>新西兰旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/new_austr.jpg" height="40" width="100"></a>
+								<p>澳大利亚旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Berlin.jpg" height="40" width="100"></a>
+								<p>柏林旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/canada_bld.jpg" height="40" width="100"></a>
+								<p>加拿大不列颠哥伦比亚省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/renchuan.jpg" height="40" width="100"></a>
+								<p>韩国仁川机场</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Canada_kbk.jpg" height="40" width="100"></a>
+								<p>加拿大魁北克省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/abuzabi.png" height="40" width="100"></a>
+								<p>阿布扎比旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/adlybld.jpg" height="40" width="100"></a>
+								<p>澳大利亚北领地</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Hawaiian.JPG" height="40" width="100"></a>
+								<p>夏威夷旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/NewZealand.jpg" height="40" width="100"></a>
+								<p>新西兰旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/new_austr.jpg" height="40" width="100"></a>
+								<p>澳大利亚旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Berlin.jpg" height="40" width="100"></a>
+								<p>柏林旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/canada_bld.jpg" height="40" width="100"></a>
+								<p>加拿大不列颠哥伦比亚省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/renchuan.jpg" height="40" width="100"></a>
+								<p>韩国仁川机场</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Canada_kbk.jpg" height="40" width="100"></a>
+								<p>加拿大魁北克省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/abuzabi.png" height="40" width="100"></a>
+								<p>阿布扎比旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/adlybld.jpg" height="40" width="100"></a>
+								<p>澳大利亚北领地</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Hawaiian.JPG" height="40" width="100"></a>
+								<p>夏威夷旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/NewZealand.jpg" height="40" width="100"></a>
+								<p>新西兰旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/new_austr.jpg" height="40" width="100"></a>
+								<p>澳大利亚旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Berlin.jpg" height="40" width="100"></a>
+								<p>柏林旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/canada_bld.jpg" height="40" width="100"></a>
+								<p>加拿大不列颠哥伦比亚省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/renchuan.jpg" height="40" width="100"></a>
+								<p>韩国仁川机场</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Canada_kbk.jpg" height="40" width="100"></a>
+								<p>加拿大魁北克省旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/abuzabi.png" height="40" width="100"></a>
+								<p>阿布扎比旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/adlybld.jpg" height="40" width="100"></a>
+								<p>澳大利亚北领地</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/Hawaiian.JPG" height="40" width="100"></a>
+								<p>夏威夷旅游局</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/index/NewZealand.jpg" height="40" width="100"></a>
+								<p>新西兰旅游局</p>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="content_bottom_inner_service">
+					<ul class="inner_service">
+						<li>
+			                <a href="#">
+			                    <i class="iconfont1 iconfont_guarantee"></i>
+			                    <p>阳光保证</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont2 iconfont_guarantee"></i>
+			                    <p>产品丰富</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont3 iconfont_guarantee"></i>
+			                    <p>卓越服务</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont4 iconfont_guarantee"></i>
+			                    <p>预订价格保障</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont5 iconfont_guarantee"></i>
+			                    <p>酒店升级保障</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont6 iconfont_guarantee"></i>
+			                    <p>航班延误保障</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont7 iconfont_guarantee"></i>
+			                    <p>特殊原因退订保障</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont8 iconfont_guarantee"></i>
+			                    <p>不可抗力退订保障</p>
+			                </a>
+           				 </li>
+           				 <li>
+			                <a href="#">
+			                    <i class="iconfont9 iconfont_guarantee"></i>
+			                    <p>重大灾害保障</p>
+			                </a>
+           				 </li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- content 结束 -->
+		
+		<!-- footer 开始 -->
+
+		<div id="footer">
+		<!-- 标志 -->
+			<div class="footer_TN_faq">
+				<dl>
+			        <dt>预订常见问题</dt>
+			        <dd><a href="#">纯玩是什么意思？</a></dd>
+			        <dd><a href="#">单房差是什么？</a></dd>
+			        <dd><a href="#">双飞、双卧都是什么意思？</a></dd>
+			        <dd><a href="#">满意度是怎么计算的？</a></dd>
+        		</dl>
+        		<dl>
+		            <dt>付款和发票</dt>
+		            <dd><a href="#">签约可以刷卡吗？</a></dd>
+		            <dd><a href="#">付款方式有哪些？</a></dd>
+		            <dd><a href="#">怎么网上支付？</a></dd>
+		            <dd><a href="#">如何获取发票？</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>签署旅游合同</dt>
+		            <dd><a href="#">有旅游合同范本下载吗？</a></dd>
+		            <dd><a href="#">门市地址在哪里？</a></dd>
+		            <dd><a href="#">能传真签合同吗？</a></dd>
+		            <dd><a href="#">可以不签合同吗？</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>旅游预订优惠政策</dt>
+		            <dd><a href="#">什么是抵用券？</a></dd>
+		            <dd><a href="#">途牛抵用券使用帮助</a></dd>
+		            <dd><a href="#">什么是旅游券？</a></dd>
+		            <dd><a href="#">如何获得旅游券？</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>其他事项</dt>
+		            <dd><a href="#">签证相关问题解答</a></dd>
+		            <dd><a href="#">旅游保险问题解答</a></dd>
+		            <dd><a href="#">退款问题解答</a></dd>
+		            <dd><a href="#">旅途中的问题</a></dd>
+		        </dl>
+		        <dl class="tiexin_serv">
+		            <!-- <dt>其他事项</dt> -->
+		            <dd>
+		                <p class="tiexin_tt iconfont_guarantee">途牛贴心服务</p>
+		                <p class="tiexin_cont">
+		                    途牛旅游网创立于2006年10月，并于2014年5
+		                    月在纳斯达克成功上市。已在北京、上海、深圳等城市设立了近百个区域服务中心，提供全年365天24小时400电话预订服务。
+		                </p>
+		                <i class="serv_car"></i>
+		            </dd>
+        		</dl>
+			</div>
+			<!-- 底部导航 -->
+			<div class="footer_trav_sev">
+				<ul class="ts_box">
+					<li>
+						<i class="ts_1"></i>
+						<dl class="trav_l ">
+		                    <dt class="tl_tt"><a>去旅游</a></dt>
+		                    <dd class="tl_w tl_w_first">
+		                        <p>
+		                            <a href="#">跟团游</a>
+		                            <a href="#">自助游</a>
+		                            <a href="#">自驾游</a>  
+		                        </p>
+		                        <p>
+		                            <a href="#">海岛游</a>
+		                            <a href="#">机票</a>
+		                            <a href="#">邮轮</a>
+		                        </p>
+		                        <p>
+		                            <a href="#/">门票</a>
+		                            <a href="#">亲子游</a>
+		                            <a href="#">签证</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">机票+酒店</a>
+		                            <a href="#">蜜月游</a>
+		                            <a href="#">酒店</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">老于推荐</a>
+		                            <a href="#">公司旅游</a>
+		                            <a href="#">牛人专线</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">首付出发</a>
+		                            <a href="#">当地玩乐</a>
+		                            <a href="#">旅拍</a>
+		                        </p>
+		                    </dd>
+               			</dl>
+					</li>
+					<li>
+						<i class="ts_2"></i>
+						<dl class="trav_l ">
+		                    <dt class="tl_tt"><a>寻优惠</a></dt>
+		                    <dd class="tl_w">
+		                        <p>
+		                            <a href="#">特卖</a> 
+		                        </p>
+		                        <p>
+		                            <a href="#">订酒店</a>
+		                            <a href="#">返现金</a>
+		                        </p>
+		                        <p>
+		                            <a href="#/">一元夺宝</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">银行特惠游</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">银行分期游</a>
+		                        </p>
+		                    </dd>
+               			</dl>
+					</li>
+					<li>
+						<i class="ts_3"></i>
+						<dl class="trav_l ">
+		                    <dt class="tl_tt"><a>看攻略</a></dt>
+		                    <dd class="tl_w">
+		                        <p>
+		                            <a href="#">攻略</a> 
+		                        </p>
+		                        <p>
+		                            <a href="#">途牛风向标</a>
+		                        </p>
+		                        <p>
+		                            <a href="#/">游记</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">达人玩法</a>
+		                        </p>
+		                    </dd>
+               			</dl>
+					</li>
+					<li>
+						<i class="ts_4"></i>
+						<dl class="trav_l ">
+		                    <dt class="tl_tt"><a>查服务</a></dt>
+		                    <dd class="tl_w">
+		                        <p>
+		                            <a href="#">帮助中心</a> 
+		                        </p>
+		                        <p>
+		                            <a href="#">积分俱乐部</a>
+		                        </p>
+		                        <p>
+		                            <a href="#/">阳光保障</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">火车时刻表</a>
+		                        </p>
+		                        <p>
+		                            <a href="#">地铁线路图</a>
+		                        </p>
+		                    </dd>
+               			</dl>
+					</li>
+					<li>
+						<i class="ts_5"></i>
+						<dl class="trav_l trav_l_last ">
+		                    <dt class="tl_tt"><a>途牛APP</a></dt>
+		                    <dd class="tl_w">
+		                        <p>
+		                            扫描下载途牛APP
+		                        </p>
+		                        <p>
+		                            <img src="images/common/Cii9EFZmiXGIHjetAAAWy1znY7MAAA4sgP_6NEAABcv997.jpg">
+		                        </p>
+		                    </dd>
+               			</dl>
+					</li>
+				</ul>
+    		</div>
+    		<!-- 客服电话 -->
+    		<div class="footer_three_trav">
+    			<div class="thr_trav">
+    				<p class="service_phone_foot_text">客户服务电话（免长途费）</p>
+    				<p class="service_phone_foot_tel">4007-999-999</p>
+    			</div>
+    		</div>
+    		<!-- 底部四张图 -->
+    		<div class="footer_fourImgs">
+    			<img src="images/common/tn_footer_01.jpg">
+    			<img src="images/common/tn_footer_02.jpg">
+    			<img src="images/common/tn_footer_03.jpg">
+    			<img src="images/common/tn_footer_04.jpg">
+    		</div>
+    		<!-- 广告图片位置 -->
+    		<div class="footer_img_place">
+    			<a href="#"><img src="images/common/tn_footer_05l_007.jpg" alt=""></a>
+    		</div>
+    		<!-- 底部文本内容 -->
+    		<div class="footer_TN">
+        		<p id="TN-24">途牛客服中心位于南京市 来电显示为 025-86859999 或 025-85080000</p>
+    			<p>北京途牛国际旅行社有限公司，旅行社业务经营许可证编号：L-BJ-CJ00144　　上海途牛国际旅行社有限公司，旅行社业务经营许可证编号：L-SH-CJ00107</p>
+			    <p id="TN-links">
+			        <a href="#">关于我们</a>
+			        <a href="#">Investor Relations</a>
+			        <a href="#">联系我们</a>
+			        <a href="#">投诉建议</a>
+			        <a href="#">广告服务</a>
+			        <a href="#">旅游券</a>
+			        <a href="#">途牛招聘</a>
+			        <a href="#">隐私保护</a>
+			        <a href="#">免责声明</a>
+			        <a href="#">旅游度假资质</a>
+			        <a href="#">主题旅游</a>
+			        <a href="#">用户协议</a>
+			        <a href="#">网站地图</a>
+			        <a href="#">UEIP</a>
+			        <a href="#">帮助中心</a>
+			    </p>
+
+				<!-- #TN-links -->
+				<p id="copyright">Copyright © 2006-2016        
+					<a rel="nofollow" href="http://www.tuniu.com">南京途牛科技有限公司</a>
+				    <a href="#">Tuniu.com</a> |
+				    <a href="#">营业执照</a> |
+				    <a href="#">ICP证：苏B2-20130006</a> |
+				    <a href="#".>苏ICP备12009060号</a> |
+				    <a href="#">深圳旅游网</a>
+				</p>
+				<!-- 底部图片 -->
+				<div class="footer_thr_img">
+				    <ul>
+				        <li>
+				            <a href="#">
+				                <img src="images/common/footer_1.jpg" height="38" width="175">
+				            </a>
+				        </li>
+				        <li>
+				            <a href="#">
+				                <img src="images/common/footer_2.jpg" alt="自助" height="38" width="175">
+				            </a>
+				        </li>
+				        <li>
+
+				            <a href="#">
+				                <img src="images/common/bottom.jpg" alt="供应商合作" height="38" width="175">
+				            </a>
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<!-- 底部滚动图片 -->
+			<div class="footer_slide">
+				<span>最新预定:</span>
+				<div class="footer_slide_box">
+					<ul class="footer_slide_list">
+					</ul>
+				</div>
+			</div>
+			<!-- 认证 -->
+			<div class="footer_trav_crop">
+	            <a href="#"><img src="images/common/chengxinOne.png" alt="网络110报警服务" style="height:41px;"></a>
+	            <a href="#"><img src="images/common/buliang.png" alt="cata航空资质认证"></a>
+	            <a href="#"><img src="images/common/wangluo.png" alt="中国互联网协会"></a>
+	            <img src="images/common/cata.png" alt="cata航空资质认证">
+	            <a href="#"><img src="images/common/huiyuan.png" alt="中国互联网协会"></a>
+	            <a href="#"><img src="images/common/3acomp.png" alt="中国互联网协会信用评价中心">  </a>
+	            <a href="#"><img src="images/common/chengxin.png" alt="诚信网站"></a>
+	            <a href="#"><img src="images/common/dianziyingye.png" alt="营业执照"></a>
+	            <a href="#"><img src="images/common/pata.png" alt="亚太旅游协会会员单位"></a>
+       		</div>
+       		<!-- 友情链接 -->
+       		<div class="footer_link">
+    			<dl>
+        			<dt>友情链接：</dt>
+        			<dd>
+    					<a href="#">笛风假期</a>
+    					<a href="#">途牛微博客</a>
+    					<a href="#">首都航空</a>
+    					<a href="#">网易旅游</a>
+    					<a href="#">中国经济网旅游</a>
+    					<a href="#">百度旅游</a>
+    					<a href="#">人民网旅游</a>
+    					<a href="#">中国制造网</a>
+    					<a href="#">51766旅游网</a>
+    					<a href="#">成都青年旅行社</a>
+    					<a href="#">欣欣旅游网</a>
+    					<a href="#">驴妈妈旅游网</a>
+    					<a href="#">奇艺旅游</a>
+    					<a href="#">拉拉勾旅游网</a>
+    					<a href="#">米胖旅游网</a>
+    					<a href="#">百程旅行网</a>
+    					<a href="#">新疆旅游</a>
+    					<a href="#">酷讯旅游</a>
+           				<a href="#">wed114结婚网</a>
+           				<a href="#">新通留学网</a>
+           				<a href="#">二手车</a>
+           				<a href="#">中国签证资讯网</a>
+           				<a href="#">19楼</a>
+           				<a href="#">途家网</a>
+       				</dd>
+    			</dl>
+			</div>
+		</div>
+
+		<!-- footer 结束 -->
+	</div>	
+</body>
+</html>

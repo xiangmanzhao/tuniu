@@ -1,0 +1,84 @@
+{
+	"titleSale":
+	[
+		{
+			"pic":"images/index/Cii9EFcVprWIajDsAAUyuOavdoEAADeKAKqz58ABTLQ719_w400_h300_c1_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"-128px -56px",
+			"positionBgCon":"-102px -36px",
+			"name":"<曼谷-芭提雅5晚6日游>畅游曼芭只卖呆萌价格 保证绝无强制消费 全程0自费 五星酒店住宿",
+			"price":"1999",
+			"salePrice":"￥2899",
+			"sale":"6.9折"
+		},
+		{
+			"pic":"images/index/199c4703_w400_h300_c1_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"-128px -56px",
+			"positionBgCon":"-102px -36px",
+			"name":"<莫斯科-圣彼得堡八日游>俄航直飞 全程四飞 享舒适体验 高餐标 升级酒店 皇家庄园 拉多加湖 ",
+			"price":"7752",
+			"salePrice":"9999",
+			"sale":"7.8折"
+		},
+		{
+			"pic":"images/index/Cii9EVc6y3KIOOdbACG6_k5semsAAF2MwBZqVAAIbsW890_w400_h300_c1_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"-128px -77px",
+			"positionBgCon":"-102px -36px",
+			"name":"首尔4晚5日游",
+			"price":"2399",
+			"salePrice":"3899",
+			"sale":"6.2折"
+		},
+		{
+			"pic":"images/index/a971df9aa420002fd9dc62df3061d3f6_w400_h300_c1_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"-128px -77px",
+			"positionBgCon":"-102px -36px",
+			"name":"曼谷-芭堤雅6日游",
+			"price":"1999",
+			"salePrice":"2489",
+			"sale":"8.0折"
+		}
+	],
+	"titleFree":
+	[
+		{
+			"pic":"images/index/Cii9EFaDqM6IbLlRAAR2IoyeRTQAABPLAFFnAkABHY6049_w400_h300_c0_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"0px -144px",
+			"positionBgCon":"-102px -36px",
+			"name":"北京故宫八达岭长城 5日经典游",
+			"price":"1536",
+			"freeAdd":"深圳出发"
+		},
+		{
+			"pic":"images/index/Cii9EVcMh4eIO6PqAAMVgad1FVsAADHXwAxVQIAAxWZ362_w400_h300_c0_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"0px -144px",
+			"positionBgCon":"-102px -36px",
+			"name":"<莫斯科-圣彼得堡八日游>俄航直飞 全程四飞 享舒适体验 高餐标 升级酒店 皇家庄园 拉多加湖 ",
+			"price":"1026",
+			"freeAdd":"深圳出发"
+		},
+		{
+			"pic":"images/index/Cii9EFZ31Z6IbeWSAANqMYiu00cAABGIQIarrgAA2pJ282_w400_h300_c0_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"0px -144px",
+			"positionBgCon":"-102px -36px",
+			"name":"首尔4晚5日游",
+			"price":"430",
+			"freeAdd":"深圳出发"
+		},
+		{
+			"pic":"images/index/Cii9EFcXRoSIX9vAAAJOX_PCTisAADs3wKhGN8AAk53779_w400_h300_c0_t0.jpg",
+			"wei":"images/index/index_icon.png",
+			"positionBg":"0px -144px",
+			"positionBgCon":"-102px -36px",
+			"name":"曼谷-芭堤雅6日游",
+			"price":"3244",
+			"freeAdd":"深圳出发"
+		}
+	]
+}
